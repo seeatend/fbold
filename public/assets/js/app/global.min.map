@@ -1,0 +1,1 @@
+{"version":3,"file":"global.min.js","sources":["../../../../app/assets/javascripts/app/global.js"],"names":["$","document","ready","$token","length","ajaxSetup","beforeSend","request","setRequestHeader","first","attr"],"mappings":"AAAAA,EAAEC,UAAUC,MAAM,WACjBC,OAASH,EAAE,mCACRG,OAAOC,OAAO,GAChBJ,EAAEK,WACDC,WAAY,SAASC,GACpB,MAAOA,GAAQC,iBAAiB,eAAgBL,OAAOM,QAAQC,KAAK"}

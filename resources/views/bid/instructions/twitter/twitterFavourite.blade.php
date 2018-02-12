@@ -1,0 +1,1 @@
+Copy and paste the URL of the public Tweet that you want {{$username}} to Favorite:

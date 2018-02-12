@@ -1,0 +1,124 @@
+@media (max-width: 2000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+}
+.navbar-nav>li {
+    float: none;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.collapse.in{
+    display:block !important;
+}
+}
+
+.navbar{
+    background-color: #4aafc5;
+    color: white;
+}
+.navbar .icon-bar{
+    @include border-radius(0);
+    background-color: #fff;
+    height: 8px;
+    width: 44px;
+}
+.navbar .icon-bar + .icon-bar{
+    margin-top: 6px;
+}
+.navbar-toggle{
+    margin-left: 15px;
+    float: left;
+}
+
+.navbar-right{
+    max-width:70%;
+    float: right !important;
+    list-style: none;
+    margin: 0 5px 0 0;
+    padding: 0;
+    li{
+        float:left;
+        margin: 13px 20px 13px 0;
+        height: 44px;
+    }
+}
+
+.nav-icon{
+    width: 44px; 
+    height: 44px;
+    display: block;
+
+    &.block{
+        background: url($app-images-base-url+'icons/icon-block.png') no-repeat scroll;
+    }
+
+    &.user{
+        background: url($app-images-base-url+'icons/icon-user.png') no-repeat scroll;
+    }
+    &.notifications{
+        background: url($app-images-base-url+'icons/icon-bell.png') no-repeat scroll;
+        .circle{
+            background-color: #ff9c00;
+            color: #fff;
+            display: block;
+            font-family: Arial;
+            font-size: 19px;
+            height: 30px;
+            margin-left: 16px;
+            padding-top: 1px;
+            width: 30px;
+      }
+  }
+}
+.navbar-header{
+    text-align: center;
+}
+.navbar-header .title{
+    font-size: 34px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-collapse li a{
+    color: #fff;
+    font-size: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    weight: 600;
+    &:hover, &:focus, &:active{
+        background-color: inherit;
+        color: #93e3f5;
+    }
+}
+
+@media (max-width: 480px) {
+ .navbar-toggle {
+  margin-right:0 !important;
+ }
+ .title.text-center img {
+  width:150px;
+ }
+}

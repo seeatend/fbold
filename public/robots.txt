@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /bids_images
+Disallow: /admin

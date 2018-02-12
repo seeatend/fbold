@@ -1,0 +1,25 @@
+{
+  "name": "SocialBid",
+  "version": "0.0.1",
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~1.10.2",
+    "jquery-migrate": "~1.2.1",
+    "jquery-ui-touch-punch": "*",
+    "modernizr": "~2.8.2",
+    "retina.js": "~1.3.0",
+    "jgrowl": "~1.3.0",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "bootstrapValidator": "~0.4.5",
+    "jquery.expander": "~1.4.11",
+    "ekko-lightbox": "~3.1.4",
+    "jquery.fileapi": "~0.4.3",
+    "toastr": "~2.0.3",
+    "bootstrap-sass": "~3.0.2"
+  },
+  "devDependencies": {
+    "font-awesome": "~4.1.0",
+    "metisMenu": "~1.0.1"
+  }
+}

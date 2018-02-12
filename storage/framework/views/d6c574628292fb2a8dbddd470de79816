@@ -1,0 +1,189 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<?php
+	$url = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  	$current_url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
+	if(isset($username)) { $current_url .= "/".$username; } else { $current_url .= $_SERVER["REQUEST_URI"]; }  
+?>
+	<head>
+   	<meta charset="utf-8">
+   	<meta name="description" content="<?php if(isset($description)): ?><?php echo e($description); ?> <?php endif; ?>"/>
+   	<meta name="keywords" content="<?php if(isset($keywords)): ?><?php echo e($keywords); ?> <?php endif; ?>"/>
+   	<meta property="og:url" content="<?php echo $current_url; ?>"/>
+   	<meta property="og:description" content="<?php if(isset($description)): ?><?php echo e($description); ?> <?php endif; ?>"/>
+
+   	<title>
+      	<?php if(isset($title)): ?><?php echo e($title); ?>   |
+      	<?php elseif(isset($username)): ?>
+       		<?php echo e($username); ?>   |
+      	<?php endif; ?>
+      	<?php echo $__env->yieldContent('pageTitle', 'Followback'); ?></title>
+    	<meta property="og:title" content=" <?php if(isset($title)): ?><?php echo e($title); ?>   | <?php elseif(isset($username)): ?> <?php echo e($username); ?>   | <?php endif; ?> <?php echo $__env->yieldContent('pageTitle', 'Followback'); ?>"/>
+    	<meta property="og:title" content="<?php echo $__env->yieldContent('pageTitle', 'Your Social Media Task Provider  |  Followback'); ?>"/>
+    	<meta property="og:image" content="http://www.followback.com/assets/images/favicon.png">
+    	<meta property="og:image" content="<?php if(isset($avatar)): ?><?php echo e('http://www.followback.com'.$avatar); ?> <?php else: ?> <?php echo e('http://www.followback.com/assets/images/homepage/homepage.jpg'); ?> <?php endif; ?> ">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<meta name="robots" content="index, follow"/>
+ 
+		<?php echo e(asset_stylesheet('plugins/colorbox/colorbox.css')); ?>
+
+		<?php echo e(asset_stylesheet('plugins/toastr/toastr.min.css')); ?>
+
+		<?php echo e(asset_stylesheet('style/video-js.css')); ?>
+
+		<?php echo e(asset_stylesheet('style/videojs-sublime-skin.css')); ?>
+
+
+		<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="shortcut icon" sizes="32x32" href="<?php echo e(asset('favicon.ico')); ?>">
+		<link rel="apple-touch-icon" href="/favicon.png"/>
+
+		<?php echo e(asset_stylesheet('style/select2.css')); ?>
+
+		<?php echo e(asset_stylesheet('style/everslider.css')); ?>
+
+		<?php echo e(asset_stylesheet('style/jquery.switchButton.css')); ?>
+
+		<?php echo e(asset_stylesheet('style/jquery.jscrollpane.css')); ?>
+
+		<?php echo e(asset_stylesheet('style/jquery.jscrollpane.lozenge.css')); ?>
+
+		<?php echo e(asset_stylesheet('style/confirm-dialog.css')); ?>
+
+
+		<?php echo e(asset_stylesheet('bootstrap.min.css')); ?>
+
+		<?php echo e(asset_stylesheet('bootstrap-theme.min.css')); ?>
+
+		<link href="/assets/css/bootstrap-toggle.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+		<?php echo e(asset_stylesheet('awesome-bootstrap-checkbox.css')); ?>
+
+		<?php echo e(asset_stylesheet('app.css')); ?>
+
+
+		<script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    	<?php echo $__env->yieldContent('css_include'); ?>
+    	<?php echo $__env->yieldContent('css_inline'); ?>
+	</head>
+
+  <body id="pagewrapper" class="<?php if(isset($body_class)): ?><?php echo e($body_class); ?><?php endif; ?> <?php echo $__env->yieldContent('body_class'); ?>">
+	<div class="sticky-header">
+		<a href="/" title="Followback"></a>
+	</div>
+	
+    <div class="user-messages">
+      <?php echo $__env->make('layouts.partials.frontend._messages', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </div>
+    <div class="home-loader"></div>
+    <?php echo $__env->make('partials/new-search-container', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+    <div id="preloader5" style="display:none;"></div>
+
+    <div id="wrapper">
+    <div class="sticky-clearfix"></div>
+      <?php echo $__env->yieldContent('content'); ?>
+    </div>
+    <?php echo $__env->make('layouts.partials.homepage._header._nav', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      <!-- Twitter -->
+    <a href="https://twitter.com/followback" title="Followback Twitter"></a>
+
+	<div class="popup-overlay">
+		<div class="box">
+			<a href="#" class="popup-close">&times;</a>
+			<h3 style="margin: 0 0 18px 0; color: #0068E1;">Verify Your Account</h3><p>Followback verifies accounts on an ongoing basis to make it easier for users to find who they are looking for. Verification is used to establish authenticity of key individuals and brands. We concentrate on highly sought users in music, acting, fashion, politics, religion, journalism, media, sports, business and other key interest areas. </p>
+			<p>Please note that verification does not factor in the amount of followers you have on social media. Any account with a blue verified badge on their Followback page is a verified account. To get verified you must provide us with one of the following:</p>
+			<ol>
+				<li>Link your Followback page to your official web page</li>
+				<li>Contact us via your personal website email address at <a style="color: #0068E1;" href="mailto:Verify@Followback.com?subject=Verify%20Followback%20Account" target="_blank">Verify@Followback.com</a></li>
+				<li>Post your Followback.com link  (i.e. Followback.com/username) on any of your public social media accounts.</li>
+			</ol>
+		</div>
+	</div><!-- END: popup-overlay -->
+
+  
+
+    <?php echo e(asset_javascript('site.js')); ?>
+
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+    <?php echo e(asset_javascript('plugins.js')); ?>
+
+    <?php echo e(asset_javascript('jquery.maskedinput.min.js')); ?>
+
+    <?php echo e(asset_javascript('main.js')); ?>
+
+
+    <?php echo $__env->yieldContent('js_include'); ?>
+    <?php echo $__env->yieldContent('js_inline'); ?>
+    
+	 <script type="text/javascript">
+		 var MTUserId='2583f09c-7450-45ea-bd8b-ded4a8e1233f';
+		 var MTFontIds = new Array();
+
+		 MTFontIds.push("1459684"); // Neue Helvetica® W04 35 Thin 
+		 MTFontIds.push("1459692"); // Neue Helvetica® W04 55 Roman 
+		 (function() {
+			var mtTracking = document.createElement('script');
+			mtTracking.type='text/javascript';
+			mtTracking.async='true';
+			mtTracking.src='/assets/js/mtiFontTrackingCode.js';
+
+			(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
+		 })();
+	 </script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-61954822-1', 'auto');
+      ga('send', 'pageview');
+
+   </script>
+	<script type='text/javascript'>
+		window.onload=function(){
+			var checker = "";
+			var number = 0;
+			if($(".home-loader:visible").length){
+				checker = setInterval(function(){ 
+					number++; 
+					if($(".home-loader:visible").length && number <= 100){
+						$(".home-loader").html(" &nbsp; "+number+"% ");
+						$(".home-loader").fadeOut("fast");
+					} else if(number >= 100){
+						$(".home-loader").html(" &nbsp; 100% ");
+						clearInterval(checker);
+						$(".home-loader").fadeOut("fast");
+					} else {
+						number = 100;
+						clearInterval(checker);
+					}
+			 }, 100);
+		} else {
+			clearInterval(checker);
+		}
+	}
+	</script> 
+	</body>
+</html>

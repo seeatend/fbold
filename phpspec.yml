@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Followback
+        psr4_prefix: Followback
+        src_path: app

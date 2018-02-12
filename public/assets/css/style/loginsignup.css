@@ -1,0 +1,287 @@
+/* Login Box */
+
+nav #login-trigger {
+  border-radius: 3px 0 0 3px;
+}
+
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+  background: #fff;
+}
+
+nav .login-content,nav .register-content ,nav .vine-login-content, nav #donation-container, nav .vine-connect-login-content {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  z-index: 999;    
+  background: #fff;
+  background-image: linear-gradient(top, #fff, #eee);  
+  padding: 15px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+nav li .login-content, nav li .register-content ,nav .vine-login-content , nav #donation-container, nav .vine-connect-login-content{
+  right: 0;
+  top: 100%;
+}
+#inputs input {
+  width: 238px;
+}
+
+/*--------------------*/
+
+#login #actions {
+  margin: 10px 0 0 0;
+}
+
+#login #submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+#login #submit::-moz-focus-inner {
+  border: none;
+}
+
+#login label {
+  float: right;
+  line-height: 30px;
+}
+
+#login label input {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+
+
+/*--------------------*/
+
+#login #actions {
+  margin: 10px 0 0 0;
+}
+
+
+#login #submit:hover,
+#login #submit:focus {    
+  background-color: #e97171;
+  background-image: linear-gradient(top, #d14545, #e97171);
+} 
+
+#login #submit:active {   
+  outline: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;   
+}
+
+#login #submit::-moz-focus-inner {
+  border: none;
+}
+
+#login label {
+  float: right;
+  line-height: 30px;
+}
+
+#login label input {
+  position: relative;
+  top: 2px;
+  right: 2px;
+}
+/* End Drop Down Login */
+.custom-form-input {
+  width: 100%;
+}
+.twitter-signin-button{
+    background-color: #55acee;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+    border: 1px solid #3b88c3;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+    color: #fff; 
+    width: 346px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -ms-border-radius: 50px;
+    padding: 13px;
+    border: 0 none;
+
+}
+.custom-vine-submit-btn {
+  float: right;
+  width: 110px;
+  height: 40px;
+  vertical-align: middle;
+  padding: 7px 26px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  line-height: 22px;
+  border: 0 none;
+  border-radius: 23px;
+  -webkit-border-radius: 23px;
+  -ms-border-radius: 23px;
+  -moz-border-radius: 23px;
+  cursor: pointer;
+  outline: 0 none;
+  background-color: #00bf8f;
+}
+.vine-submit-btn-container {
+  width: 346px;
+  font:helveica;
+}
+.vine-input {
+  background: #e4e4e4;
+  border: 0 none;
+  border-radius: 4px;
+}
+.vine-submit-btn-container a{
+  color: #00bf8f;
+  font-size: 12px;
+  font-weight: 400px;
+  letter-spacing: 0.029em;
+  line-height: 16px;
+}
+.auth-fail-error,.error-email-address,.error-password-match {
+/*  color: red;
+  font-weight: #a80000;*/
+
+}
+.login-container {
+  height: auto;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding: 15px 25px; 
+}
+p.error-email-address {
+  margin-bottom: 0px;
+}
+.vine-fail-error {
+  text-align: center;
+}
+
+.donation-contents {
+  margin: 20px;
+}
+.donation-contents form{
+  text-align: center;
+}
+.charity-box {
+  /*width: 115px;*/
+  width: 11%;
+  height: auto;
+  margin-bottom: 26px;
+  /*height: 90px;*/
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.donation-contents > h3,.donate-amount-container,.donation-contents > p,.donation-button{
+  margin-left: 14px;
+}
+.donate-amount-container span:first-child{
+  font-weight: 800; 
+  margin-right: 8px;
+}
+
+.select-cherity-input {
+  display: block;
+  margin: 6px auto auto !important;
+}
+.charity-box p{margin: 0;}
+.charity-container {
+
+}
+.donate-amount-container {
+  /*margin-top: 32px;*/
+  margin-bottom: 10px;
+  float: left;
+}
+.donation-button {
+   float: right;
+   /*margin-top: 25px;*/
+   margin-right: 23px;
+   margin-bottom: 20px;
+}
+.donation-button .donation-skip {
+  height: 45px;
+  width: 80px;
+   background-color: #da4f49;
+    background-image: linear-gradient(to bottom, #ee5f5b, #bd362f);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+}
+.donation-button .donation-accept {
+  height: 45px;
+  width: 80px;  
+   background-color: #5bb75b;
+    background-image: linear-gradient(to bottom, #62c462, #51a351);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+input.donate-amount {
+  width: 85px;
+  height: 35px;
+  display: inline;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.donation-skip:hover,
+.donation-accept:focus,
+.donation-accept:hover,
+.donation-accept:focus {
+  color: #fff;
+  text-decoration: none;
+  background-position: 0 -15px !important;
+  -webkit-transition: background-position 0.1s linear !important;
+     -moz-transition: background-position 0.1s linear !important;
+       -o-transition: background-position 0.1s linear !important;
+          transition: background-position 0.1s linear !important;
+  background-image: none;
+}
+.login-content .loader-contain, .register-content .loader-contain, 
+.vine-login-content .loader-contain, .vine-connect-login-content .loader-contain, .register-loader-contain{
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 999999;
+}
+
+.login-content .loader-contain .search-loader, .register-content .loader-contain .search-loader, 
+.vine-login-content .loader-contain .search-loader, .vine-connect-login-content .loader-contain .search-loader, .reg-img-search-loader{
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url("/assets/images/icons/ajax-loader.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.reg-img-search-loader {
+  height: 70px !important;
+  width: 70px !important;
+  top: -20px !important;
+}
+/*154,156,95*/

@@ -1,0 +1,1 @@
+Copy and paste the link of the public post you want {{$username}} to like, favorite, share, pin, etc:

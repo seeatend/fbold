@@ -1,0 +1,344 @@
+/**
+ * GENERAL
+ */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial;
+  display: table;
+  width: 100%;
+}
+
+ body.dark-bg{
+  background-color: #000;
+ 	color: #fff;
+ }
+ h1,h2,h3,h4,h5,h6{
+ 	font-family: Arial;
+ }
+ form{
+ 	font-size: 20px;
+ 	margin: 0 30px;
+ }
+/**
+ * BIDS
+ */
+ .bid{
+ 	font-family: Arial;
+ 	font-size: 30px;
+ 	position: relative;
+ 	form{
+ 		margin:0;
+ 	}
+ 	.bid-fields{
+ 		padding: 0 40px;
+ 	}
+ 	h3{
+ 		font-family: Arial;
+ 	}
+ 	label .username{
+ 		color: red;
+ 	}
+ 	.avatar{
+ 		width: 200px;
+ 		display: block;
+ 		margin: 0 auto;
+ 		position: relative;
+ 		color: #000;
+ 	}
+ 	select.form-control{
+ 		background: url("/assets/images/icons/icon-arrow-down.png") no-repeat scroll right 25px center rgba(0, 0, 0, 0);
+ 	}
+ 	.form-control{
+ 		background: #efefef;
+ 		border: medium none;
+ 		border-radius: 3px;
+ 		color: #7f7f7f;
+ 		font-family: Arial;
+ 		font-size: 30px;
+ 		height: 80px;
+ 		margin-bottom: 10px;
+ 		margin-top: 10px;
+ 		padding-top: 18px;
+ 	}
+ 	textarea.form-control{
+ 		height: 300px;
+ 		resize: none;
+ 	}
+ }
+
+ .bid-list{
+ 	list-style: none;
+ 	padding-left: 40px;
+ 	padding-right: 40px;
+ 	li{
+ 		border-bottom: 2px solid #e5e5e5;
+ 		padding-top: 40px;
+ 		padding-bottom: 40px;
+ 	}
+ 	.avatar{
+ 		float:left;
+ 		max-width:80px;
+ 	}
+ 	.info{
+ 		font-family: Arial;
+ 		font-size: 20px;
+ 		padding-left: 120px;
+ 	}
+ 	img{
+ 		@include border-radius(50%);
+ 		min-width:80px;
+ 		max-width:80px;
+ 	}
+ 	.price{
+ 		color: #4dbe25;
+ 	}
+ 	.bid-type{
+ 		color: #9d9d9d;
+ 		font-size: 24px;
+ 		margin: 10px 0;
+ 	}
+ 	.time-ago{
+ 		color: #c0c0c0;
+ 		font-size: 22px;
+ 		font-weight: bold;
+ 	}
+ }
+
+ .user-search-result{
+ 	margin-left: 40px;
+ 	margin-right: 40px;
+ 	border-bottom: 2px solid #e5e5e5;
+ 	padding: 40px 0;
+ 	position: relative;
+ 	.avatar{
+ 		height: 88px;
+ 		float: left;
+ 	}
+ 	.description {
+ 		color: #363636;
+ 		font-family: Arial;
+ 		font-size: 35px;
+ 		line-height: 35px;
+ 		margin-bottom: 15px;
+ 		margin-top: 0;
+ 		padding-left: 128px;
+ 		text-transform: none;
+ 	}
+ 	.social-label {
+ 		color: #c0c0c0;
+ 		font-family: Arial;
+ 		font-size: 22px;
+ 		margin-bottom: 0;
+ 	}
+ 	img{
+ 		max-height: 100%;
+ 		@include border-radius(50%);
+ 	}
+ 	.right-arrow {
+ 		background: url($app-images-base-url+"right-arrow.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+ 		display: block;
+ 		height: 100%;
+ 		position: absolute;
+ 		right: 40px;
+ 		top: 0;
+ 		width: 18px;
+ 	}
+ }
+
+
+#bidUpload.btn {
+ 	cursor: pointer;
+ 	display: inline-block;
+ 	position: relative;
+ 	overflow: hidden;
+}
+#bidUpload.btn input {
+ 	top: -10px;
+ 	right: -40px;
+ 	z-index: 2;
+ 	position: absolute;
+ 	cursor: pointer;
+ 	opacity: 0;
+ 	filter: alpha(opacity=0);
+ 	font-size: 50px;
+}
+
+.progress .bar {
+ 	background-color: #f60;
+ 	bottom: 0;
+ 	left: 0;
+ 	position: absolute;
+ 	top: 0;
+ 	width: 0;
+}
+
+.bidsForMeTable img{
+	max-width:80px;
+}
+
+.counterbid-form{
+	margin:0;
+	.input-group input{
+		width: 120px;
+	}
+	.input-group-btn{
+		width: 25px;
+	}
+	.form-group {
+		margin-right: 30px;
+	}
+}
+
+.fixed-price-stub{
+	font-size: 30px;
+	font-weight: bold;
+	padding:10px;
+	background-color: #efefef;
+}
+
+.bid-info{
+	color: red;
+}
+
+
+/**********************Check out******************/
+
+.checkout-area {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 200px;
+}
+
+  .checkout-area p {
+    font-size: 25px;
+  }
+
+  .checkout-area h4 {
+    margin-top: 20px;
+    font-size: 36px;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+
+  .checkout-area p a {
+    color: #4aafc5;
+    font-family: Arial;
+  }
+
+  .checkout-area p a:hover {
+    color: #4aafc5;
+    text-decoration: underline;
+  }
+
+  .checkout-area .greet {
+    float: right;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: normal;
+  }
+
+.paypal {
+  float: left;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.help {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #dddddd;
+  padding-bottom: 110px;
+  padding-top: 12px;
+  padding-right: 20px;
+}
+
+  .help h4 {
+    font-size: 36px;
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+
+  .help p {
+    font-size: 20px;
+  }
+
+  .help ul {
+    font-family: Arial;
+  }
+
+
+.payment {
+  width: 50%;
+  float: left;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+  .payment img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+.custom-btn {
+  background-image: url("../img/bg-btn.jpg");
+  background-repeat: repeat-x;
+  background-color: #4cb0c5;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  color: #ffffff;
+  font-size: 21px;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 6px 15px;
+  text-decoration: none;
+  border-top: 1px solid #a8d5df;
+  border-bottom: 1px solid #5d9ca9;
+  font-family: Arial;
+}
+
+  .custom-btn:hover {
+    background-image: none;
+    text-decoration: none;
+    background-color: #4cb0c5;
+    color: #ffffff;
+  }
+
+.checkout-area .explore {
+  float: left;
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+  .checkout-area .explore p {
+    font-size: 25px;
+  }
+
+.services-prices {
+  margin-bottom: 30px;
+  .form-group{
+    margin-bottom: 20px;
+  }
+  .services-list-item .btn.active {
+    background-color: #47A447;
+    border-color: #398439;
+  }
+}
+
+.footer {
+  display: table-row;
+  height: 50px;
+}
+
+/* fix bootstraps horizontal scrollbar
+ * http://stackoverflow.com/questions/18392477/how-to-make-bootstrap-3-fluid-layout-without-horizontal-scrollbar
+ */
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}

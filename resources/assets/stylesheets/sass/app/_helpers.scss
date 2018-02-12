@@ -1,0 +1,28 @@
+.bold{
+	font-weight: bold;
+}
+
+.padding-20{
+	padding-left: ($grid-gutter-width / 2) + 20px;
+	padding-right: ($grid-gutter-width / 2) + 20px;;
+}
+
+.mlr30{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.plr40{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.rounded{
+	@include border-radius(50%);
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}

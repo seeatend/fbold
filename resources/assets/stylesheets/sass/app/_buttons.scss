@@ -1,0 +1,38 @@
+.btn-blue{
+	background-color: #4aafc5;
+	border: medium none;
+	&:hover{
+		background-color: #56c8e1;
+	}
+}
+
+.btn-xl{
+	@include border-radius(3px);
+	height: 90px;
+	font-size: 34px;
+}
+
+.selection-area a {
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 2px solid #e5e5e5;
+  color: #4aafc5;
+  float: left;
+  font-family: Arial;
+  font-size: 30px;
+  height: 85px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  width: 50%;
+  text-align: center;
+}
+.selection-area a.left {
+  border-right: 1px solid #e5e5e5;
+}
+
+.selection-area a.right {
+  border-left: 1px solid #e5e5e5;
+}
+
+.bid .selection-area{
+	margin-bottom: 20px;
+}

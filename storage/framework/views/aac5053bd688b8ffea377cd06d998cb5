@@ -1,0 +1,14 @@
+<?php $__env->startSection('messages'); ?>
+<?php echo Flash::render('flash-errors'); ?>
+<?php echo $__env->yieldSection(); ?>
+<?php $__env->startSection('errors'); ?>
+<?php if($errors->has('error')): ?>
+
+		<?php foreach($errors->get('error') as $error): ?>
+
+					<div class="alert-message alert-danger"><?php echo e($error); ?> <a href="#" class="remove-alert"><ins class="fa fa-times"></ins></a></div>
+
+		<?php endforeach; ?>
+
+	<?php endif; ?>
+<?php echo $__env->yieldSection(); ?>

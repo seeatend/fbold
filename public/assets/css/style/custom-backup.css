@@ -1,0 +1,229 @@
+@font-face {
+  font-family: helveticaUltra;
+  src: url(/fonts/HelveticaLTStd-Light.otf);
+}
+@font-face {
+  font-family: helveticaRoman;
+  src: url(/fonts/HelveticaLTStd-Roman.otf);
+}
+.most-searched-users{}
+
+button.create-bid-continue { color: #000; border: none; background: transparent; font-weight: 800;  margin: 5px 0; }
+button.create-bid-continue:hover { color: #0068E1; }
+
+img{
+	max-width: 100%;
+}
+.title h1{
+	/*text-align: center;*/
+	font-size: 21px;
+	color: #555555;
+	margin: 35px 0;
+}
+.user-list{
+	display: block;
+	text-align: center;
+	margin-bottom: 30px;
+	background: #FFF;
+	border-radius: 10px;
+	/*border-top: #dfdfdf solid 1px;*/
+	/*border-bottom: #dfdfdf solid 1px;*/
+	/*background: #f00;*/
+}
+.user-list ul.searched-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.user-list ul.searched-list li{
+	display: inline-block;
+	width: 186px;
+	position: relative;
+	margin: 30px 0;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s
+	-o-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+}
+.user-image{
+	width:138px;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-o-border-radius:50%;
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	/*background-image: url("/assets/images/homepage/default-user.png");	*/
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 140px;
+	width: 140px;
+}
+.social-icon{
+	position: absolute;
+	top: 75px;
+	right: 10px;
+	border-radius: 50%;
+	overflow:hidden;
+	box-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.user-list ul.searched-list li .user-image > img{
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s
+	-o-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+  	border-radius: 50%;
+  	
+/*  	background-image: url("/assets/images/homepage/def.png");	
+	background-position: center;
+	background-repeat: no-repeat;*/
+	height: 140px;
+	width: 140px;
+}
+
+.user-list ul.searched-list li:hover .user-image > img{
+	/*-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);*/
+	/*height: auto;
+	width:auto;*/
+	opacity: 0.8;
+	cursor: pointer;
+}
+.user-name{
+	display: block; 
+	margin-top: 15px;
+}
+.user-name a{
+	color: #000;
+	font-weight: bold;
+	font-family: helveticaUltra;
+	text-decoration: none;
+}
+.user-name a:focus, .user-name a:active{
+	outline: none;
+}
+
+.bid-instruction A SPAN { color: #0068E1 !important; }
+.bid-instruction A:HOVER SPAN { color: #000 !important; }
+
+.btn-group { float: left; }
+.button-form { float: right !important; width: auto !important; }
+
+.cleanbutton { float: left; padding: 15px 15px 20px; border: 1px solid #999; border-radius: 3px; line-height: 1.85em; }
+.cleanbutton I { float: left;  font-size: 18px;  }
+
+.cleanbutton.block {  }
+.cleanbutton.block:hover { color: #bb0000; border-color: #bb0000; }
+
+.cleanbutton.deny { color: #fff; border-color: #bb0000; background-color: #bb0000; }
+.cleanbutton.deny:hover { background-color: #000; color: #FFF;  }
+
+.cleanbutton.accept {  color: #FFF;  background-color: #0068E1; }
+.cleanbutton.accept:hover  { color: #fff;   background: #000 !important;  border: 1px solid #000; }
+
+.cleanbutton.counter:hover I { color: #00529b !important; }
+.cleanbutton.counter:hover  { color: #00529b; border: 1px solid #00529b; }
+
+.counterform { float:left;height:auto;width:90px;border-top-right-radius: 0; border-right: none; border-bottom-right-radius: 0; display:none; padding: 9px 9px 8px 9px; }
+
+.loader-contain { left: 40px !important; }
+
+@media screen and (min-width: 300px) and (max-width:768px){
+	.title h1{
+		text-align: center;
+	}
+}
+@media screen and (min-width:769px) and (max-width:991px){
+	.title h1{
+		text-align: center;
+	}
+}
+@media screen and (min-width:992px) and (max-width: 1199px){
+	.title h1{
+		text-align: center;
+	}
+	.searched-list{
+		padding: 0 95px;
+	}
+}
+
+
+/* My Changes */
+#service-prices .task-prices-tabs .tab-content .minimum-bid .save-btn{
+	margin-right: 145px !important;
+}
+.price-save-button{
+	width: 75%;
+	float:right;
+}
+#connect .account-sidebar li{
+	width: 80%;
+}
+#connect .account-sidebar a:hover{
+	width: 99%;
+	text-shadow: 1px 1px 1px #f6f6f6;
+	color: #000;
+	background: #e2e2e2;
+}
+/*#connect .account-sidebar a:hover:after{
+	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e2e2e2;
+	border-width: 18px 0 18px 8px;
+	border-style: solid;
+	height: 0;
+	content: " ";
+	position: absolute;
+	right: -8px;
+	top: 0;
+	width: 0;
+}*/
+.btn-block{width: auto;}
+.login-container{width: 50%; padding-top: 5px;}
+.login-remind-password{margin-bottom:5px;}
+@media screen and (min-width: 300px) and (max-width: 480px){
+	.login-container{width: 92%; padding-top: 5px;}
+	.login-remind-password{text-indent: -5px; padding: 0; margin-bottom:5px;}
+}
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.login-container{width: 92%; padding-top: 5px;}
+	.login-remind-password{margin-bottom:5px;}
+	
+	
+}
+@media screen and (min-width: 769px) and (max-width: 992px){
+	.login-container{width: 50%; padding-top: 5px;}
+	.login-remind-password{margin-bottom:5px;}
+}
+@media only screen and (max-width: 600px) {
+.cleanbutton { margin: 0 7px 0 0px !important; font-size: 12px !important; float: left; padding: 10px 15px 10px; border: 1px solid #999; border-radius: 3px; line-height: 1.85em; }
+.counterform { float:left;height:auto;width:45px;border-top-right-radius: 0; border-right: none; border-bottom-right-radius: 0;display:none;padding: 5px 9px 5px 9px; }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1024px){
+	.login-container{width: 50%; padding-top: 5px;}
+	.login-remind-password{margin-bottom:5px;}
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+	.login-container{width: 50%; padding-top: 5px;}
+	.login-remind-password{margin-bottom:5px;}
+}
+/*.click-pic::-webkit-file-upload-button {
+  visibility: hidden;{
+}
+.click-pic::before {
+  content: 'Select some files';
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #F00, #FFA) !important;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}*/
+/* My Changes */

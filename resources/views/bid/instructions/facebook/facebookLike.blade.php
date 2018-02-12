@@ -1,0 +1,1 @@
+Copy and paste the URL of the public Facebook page that you want {{$username}} to like:

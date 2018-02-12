@@ -1,0 +1,22 @@
+.search-result-icon{
+	display: block;
+	float: left;
+	height: 36px;
+	margin-right: 10px;
+	width: 36px;
+}
+.twitter-icon {
+	background: url($app-images-base-url+"icons/icon-twitter-circle.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+.facebook-icon {
+	background: url($app-images-base-url+"icons/icon-fb-circle.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.instagram-icon {
+	background: url($app-images-base-url+"icons/icon-instagram-circle.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.linkedin-icon {
+	background: url($app-images-base-url+"icons/icon-linkedin-circle.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
