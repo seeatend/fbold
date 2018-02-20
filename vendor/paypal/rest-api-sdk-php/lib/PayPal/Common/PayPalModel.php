@@ -174,7 +174,7 @@ class PayPalModel
         foreach ($param as $k => $v) {
             if ($v instanceof PayPalModel) {
                 $ret[$k] = $v->toArray();
-            } else if (sizeof($v) <= 0 && is_array($v)) {
+            } else if (empty($v) && is_array($v)) {
                 $ret[$k] = array();
             } else if (is_array($v)) {
                 $ret[$k] = $this->_convertToArray($v);

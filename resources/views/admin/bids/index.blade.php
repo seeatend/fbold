@@ -28,10 +28,7 @@
 			<td class="EntryID">{{$bid->id}}</td>
 			<td class="EntrySender">{{ (isset($bid->user->username) && !empty($bid->user->username)) ? $bid->user->username : ''}}</td>
 			<td class="EntryReceiver">
-				<?php
-					$a = $bid->username." (ID $bid->identifier)";
-					echo $a;
-				?>
+				{{ (isset($bid->username) && !empty($bid->username)) ? $bid->username : ''}} (ID {{$bid->identifier}})
 			</td>
 			<td>{{--{{ $bid->service }}--}}{{ $bid->service_type }}</td>
 			<td>{{$bid->present()->priceDecimal}}</td>

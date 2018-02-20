@@ -6,7 +6,6 @@
   use Followback\ServiceBid;
 
   $user = Sentry::getUser();
-  
   $Photo = "";
   $signedUrl = "";
   
@@ -176,8 +175,7 @@
 
                         <?php $socailURL = $bid->getSenderFollowbackProfileUrl(
                         ); ?>
-                        <?php $socailUsername = $bid->findCreatorFollowbackUsername(
-                        ); ?>
+                        <?php $socailUsername = $bid->findCreatorFollowbackUsername(); ?>
 
                         <h6>{!! $display_msg !!}
                           <a href="{{ $socailURL }}" data-attr="{{ $socailURL }}" acc-type="followback" data-followback-href="{{ $socailURL }}"><span> {{ $socailUsername }}</span>

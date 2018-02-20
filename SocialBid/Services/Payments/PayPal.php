@@ -187,6 +187,7 @@ class PayPal {
             Session::set('bid.store', $bid);
             return $this;
         } catch (PPConnectionException $e) {
+            dd($e);
             $this->response = false;
             return $this;
         }

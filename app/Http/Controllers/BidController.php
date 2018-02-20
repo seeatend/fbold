@@ -430,7 +430,6 @@ class BidController extends BaseController {
             'updated_at';
 
         $bids = ServiceBid::forCurrentUser()->orderBy($orderBy, 'desc')->get();
-
         return view(
             'bid.list',
             compact('bids', 'title', 'orderBy')

@@ -152,7 +152,12 @@ class ServiceBid extends Model {
 
     public function findCreatorFollowbackUsername()
     {
-        return $this->user->username;
+        if (isset($this->user->username)) {
+            return $this->user->username;
+        } else {
+            return '';
+        }
+        
     }
 
     public function findCreatorFollowbackName()
@@ -267,8 +272,13 @@ class ServiceBid extends Model {
 
         $userInfo = User::find($userId);
         //$url = '/' . $userInfo->username . "?idf=" . $userInfo->id . "&img=" . $userInfo->avatar;
-        $url = '/' . $userInfo->username . '/redirect/FollowbackAcc/' .
+        if (isset($userInfo->username)) {
+            $url = '/' . $userInfo->username . '/redirect/FollowbackAcc/' .
             "?idf=" . $userInfo->id . "&img=" . $userInfo->avatar;
+        } else {
+            $url = "Can't Find Followback Profile URL";
+        }
+        
         return $url;
     }
 
