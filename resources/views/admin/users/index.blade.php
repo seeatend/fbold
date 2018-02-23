@@ -152,7 +152,7 @@
           <td>{{$user->activated ? 'Yes': 'No'}}</td>
           <td>{{$user->email_verified ? 'Yes': 'No'}}</td>
 
-          <td>{{ date('n/j/Y', strtotime ($user->last_login)) }}</td>
+          <td>{{ date('n/j/Y', strtotime ($user->created_at)) }}</td>
           <td>
             <a class='btn btn-danger admin-del-user' href="{{route('admin_user_delete', $user->id)}}">Delete</a>
           </td>
