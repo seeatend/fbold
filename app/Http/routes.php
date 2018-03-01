@@ -3247,7 +3247,7 @@ Route::get('fix-upload-date', function() {
             continue;
         }
         
-        if ($date !== date('M d, Y, g:i a', strtotime($date))) {
+        if ($date !== date('M j, Y, g:i a', strtotime($date))) {
            $date = str_replace(',', ', 2018,', $date);
         }
 
