@@ -13,116 +13,6 @@ use Illuminate\Support\Str;
 Route::get('update-user-avatar', function() {
     $objects = 
         '{
-            "239": "https://ucarecdn.com/0b508337-e5c8-4644-afd3-ac5d6a523e4b/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "218": "https://ucarecdn.com/be3b2e0d-17d2-4acd-bf73-988ea216c300/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "222": "https://ucarecdn.com/6bddcaa0-0771-4d73-9205-3399b3ca860e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "246": "https://ucarecdn.com/d087627f-8cc2-4c72-9db9-5562b92141d6/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "224": null,
-            "223": "https://ucarecdn.com/6ddcaa57-94db-42dd-9f24-6f932623f48e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "255": "https://ucarecdn.com/dbc1e8bc-777f-4080-990d-08b22df41c5c/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "219": "https://ucarecdn.com/c876d667-6f19-4510-823a-722ad2559927/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "256": "https://ucarecdn.com/0c6bc5b2-1a8a-4c5e-b8d2-ee33d4f4a488/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "212": "https://ucarecdn.com/06a6ae99-6266-40df-bcde-be53d6c4bcef/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "9": "https://followback.com/assets/images/default-userpic.svg",
-            "211": "https://ucarecdn.com/8fbedda7-86ef-4b68-848f-a5feeadd1539/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "204": "https://ucarecdn.com/2ace8cf8-551f-40dc-bff7-20ccb2e92fcc/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "210": "https://ucarecdn.com/bf436ed7-ea75-41a6-9f10-f79cd8fe3d0e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "203": "https://ucarecdn.com/615ff784-f1f1-4cc7-bbfc-41151e6bc27a/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "205": null,
-            "337": null,
-            "384": null,
-            "278": null,
-            "380": null,
-            "298": "https://ucarecdn.com/5555157a-d707-441c-8756-6e6213954982/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "353": "https://ucarecdn.com/f4e355c8-c144-4220-9722-4049ef100f64/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "350": null,
-            "383": null,
-            "395": null,
-            "393": "https://ucarecdn.com/47b84879-73f1-4faf-93da-a66943913f69/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "391": "https://ucarecdn.com/b28e749e-224c-4b87-b39e-845fe6e1ed4e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "394": "https://ucarecdn.com/5c56f4c4-b751-422d-ad31-583d9738e55e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "387": "https://ucarecdn.com/48ff2a95-37c5-483a-a05d-24a054180274/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "392": "https://ucarecdn.com/45e88cc7-952a-48e6-b082-656e8fb3fd2a/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "398": null,
-            "390": "https://ucarecdn.com/ce93c01a-f039-404d-a38d-cac605e031fd/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "533": "https://ucarecdn.com/9e72b66c-04bf-4b5a-8ab1-363bb26854f3/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "440": null,
-            "581": "https://ucarecdn.com/dbea5b25-8619-453c-948d-8d3e8ad73198/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "444": "https://ucarecdn.com/67df5a8c-d9b3-43cd-90d1-b0290669f859/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "599": "https://ucarecdn.com/b1b909b3-af3c-4d39-a10a-6587582646d7/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "472": "https://ucarecdn.com/d1ad542f-42fa-44aa-83be-ab3807efc4f7/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "576": null,
-            "598": "https://ucarecdn.com/84cb5e4e-c785-48e2-a4b5-5d2c0918688b/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "635": null,
-            "625": "https://followback.com/assets/images/default-userpic.svg",
-            "623": "https://ucarecdn.com/f539f073-6aa4-4a83-8140-52792b868f9e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "628": null,
-            "609": "https://ucarecdn.com/1c27db8b-f135-4029-899f-ab33df6d5bb0/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "632": null,
-            "629": null,
-            "633": null,
-            "646": "https://followback.com/assets/images/default-userpic.svg",
-            "647": null,
-            "644": "https://ucarecdn.com/87798083-8df2-44a9-b0a6-946f87a8169b/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "645": "https://ucarecdn.com/a8e84ba0-6d3f-4535-b681-b0d35ce93e6e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "637": null,
-            "639": "https://followback.com/assets/images/default-userpic.svg",
-            "643": "https://ucarecdn.com/c9ed7f15-5b0c-41c5-9d7d-72a52ab54e5b/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "649": null,
-            "638": "https://ucarecdn.com/2e7e8432-4250-4aad-9bf0-d4e5cb0d6470/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "648": null,
-            "654": "https://followback.com/assets/images/default-userpic.svg",
-            "669": "https://ucarecdn.com/e37c0798-6633-4f57-89ea-116a23f46b24/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "652": null,
-            "655": null,
-            "657": null,
-            "678": null,
-            "703": null,
-            "682": null,
-            "687": null,
-            "708": "https://followback.com/assets/images/default-userpic.svg",
-            "680": null,
-            "710": null,
-            "691": null,
-            "730": null,
-            "744": null,
-            "738": null,
-            "715": "https://ucarecdn.com/3ede1230-20d9-4d09-87f1-c64ef4d97fe1/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "713": "https://followback.com/assets/images/default-userpic.svg",
-            "732": null,
-            "728": null,
-            "737": null,
-            "760": null,
-            "756": null,
-            "782": null,
-            "775": null,
-            "750": "https://followback.com/assets/images/default-userpic.svg",
-            "785": null,
-            "753": null,
-            "777": null,
-            "793": null,
-            "796": "https://ucarecdn.com/bcd751a5-ae42-4dca-8865-2ff3c80d170f/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "799": null,
-            "808": null,
-            "819": "https://ucarecdn.com/121da8aa-c100-483b-b377-c61213a98c77/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "787": null,
-            "794": "https://ucarecdn.com/d40e4a88-69a2-4ee2-92c8-9175ce207e1e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "821": "https://ucarecdn.com/426b6fbe-3bee-4491-ab00-8f629a7c7f5a/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "841": "https://ucarecdn.com/7d8d6b53-f91f-4ec7-afe9-4bf5a386f83a/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "836": "https://ucarecdn.com/542d539b-2c59-43fb-892c-89a251d553c0/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
-            "861": null,
-            "858": null,
-            "873": null,
-            "877": null,
-            "879": null,
-            "881": null,
-            "897": null,
-            "894": null,
-            "905": null,
-            "883": "https://followback.com/assets/images/default-userpic.svg",
-            "892": null,
-            "890": null,
-            "901": null,
             "888": "https://ucarecdn.com/62215590-8c52-437e-9bb7-f56f7e98e84e/-/scale_crop/200x140/center/-/quality/better/-/enhance/40/-/sharp/",
             "927": null,
             "942": null,
@@ -2222,13 +2112,19 @@ Route::get('update-user-avatar', function() {
         // Create file name
         $user->avatar = '/bids_images/' . $user->username . '-' . Str::random(24) . '.png';
 
-        // Go get actaul image and save
-        if (copy($avatar, public_path() . $user->avatar)) {
-            $user->update();
-            $results['success']++;
-        } else {
+        try {
+            if (copy($avatar, public_path() . $user->avatar)) {
+                $user->update();
+                $results['success']++;
+            } else {
+                $results['error_image']++;
+            }
+        } catch (\Exception $e) {
             $results['error_image']++;
+            continue;
         }
+        // Go get actaul image and save
+        
         
     }
 
