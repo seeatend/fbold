@@ -261,4 +261,67 @@ class UserController extends BaseAdminController {
         Flash::addSuccess('Image Updated successfully!');
         return Redirect::route('admin_users_index');
     }
+
+
+    public function createSocialUrls() {
+        $input = Input::all();
+        $user_id = $input['user_id'];
+
+        $user = User::where('id', $user_id)->with('socialAccounts')->first();
+
+        if ($user) {
+            if ($user->socialAccounts->isEmpty()) {
+                $time = \Carbon\Carbon::now();
+                 DB::table('users_social_accounts')->insert(
+                    [
+                        'username' => $user->username,
+                        'screen_name' => $user->username,  
+                        'is_connected' => "1", 
+                        'user_id' => $user->id,
+                        'type' => "followback",
+                        'identifier' => $user->id,
+                        'token' => "",
+                        'created_at' => $time->toDateTimeString(),
+                        'updated_at' => $time->toDateTimeString()
+                    ]
+                );
+                 $user->load('socialAccounts');
+            }
+
+            return view('admin.users.addSocialUrls')->with('user', $user);
+        } else {
+            Flash::addError('User Not Found.');
+            return Redirect::route('admin_users_index');
+        }
+
+        
+    }
+
+    public function storeSocialUrls() {
+        $input = Input::all();
+        $user = User::with('socialAccounts')->find($input['user_id']);
+        if ($user) {
+            $sa = $user->socialAccounts->first();
+            if ($sa) {
+                $sa->facebook = $input['facebook'];
+                $sa->twitter = $input['twitter'];
+                $sa->googleplus = $input['google'];
+                $sa->soundcloud = $input['soundcloud'];
+                $sa->youtube = $input['youtube'];
+                $sa->web = $input['web'];
+                $sa->instagram = $input['instagram'];
+                $sa->linkedin = $input['linkedin'];
+                if ($sa->save()) {
+                    Flash::addSuccess('Added New Social URLs');
+                }
+            } else {
+                Flash::addError('Can\t Find the "Social Account"');
+            }
+            
+        } else {
+            Flash::addError('Error: Can\t Find User.');
+        }
+
+        return Redirect::route('admin_users_index');
+    }
 }

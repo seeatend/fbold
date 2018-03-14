@@ -17,7 +17,8 @@
         <td>Activated</td>
         <td>Email Confirmed</td>
         <td>Created</td>
-        <td>Actions</td>
+        <td>Social</td>
+        <td>Delete</td>
       </tr>
     </thead>
     <tbody>
@@ -154,7 +155,10 @@
 
           <td>{{ date('n/j/Y', strtotime ($user->created_at)) }}</td>
           <td>
-            <a class='btn btn-danger admin-del-user' href="{{route('admin_user_delete', $user->id)}}">Delete</a>
+            <a class='btn btn-primary btn-xs' href="{{route('create_social_urls', ['user_id' => $user->id])}}">Social URLs</a>
+          </td>
+          <td>
+            <a class='btn btn-danger btn-xs admin-del-user' href="{{route('admin_user_delete', $user->id)}}">Delete</a>
           </td>
         </tr>
       @endforeach

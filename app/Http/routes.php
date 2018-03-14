@@ -2132,7 +2132,7 @@ Route::get('update-user-avatar', function() {
 });
 
 Route::group(
-    ['prefix' => 'admin'],
+    ['prefix' => 'admin','middleware' => 'auth'],
     function () {
         Route::get(
             '/',
@@ -2198,7 +2198,21 @@ Route::group(
                 'uses' => 'Admin\UserController@saveFollowbackProfileImage'
             )
         );
+        Route::get(
+            'create-social-urls',
+            array(
+                'as' => 'create_social_urls',
+                'uses' => 'Admin\UserController@createSocialUrls'
+            )
+        );
 
+        Route::post(
+            'store-social-urls',
+            array(
+                'as' => 'store_social_urls',
+                'uses' => 'Admin\UserController@storeSocialUrls'
+            )
+        );
         Route::get(
             'users',
             array(
