@@ -62,13 +62,13 @@
 						 	@endif
 						 
 						 </li>@endif
-						 @if($userSocial->twitter != "")<li><a target="_blank" href="{{$userSocial->twitter}}"><ins class="fa fa-twitter"></ins></a></li>@endif
-						 @if($userSocial->facebook != "")<li><a target="_blank" href="{{$userSocial->facebook}}"><ins class="fa fa-facebook"></ins></a></li>@endif
-						 @if($userSocial->instagram != "")<li><a target="_blank" href="{{$userSocial->instagram}}"><ins class="fa fa-instagram"></ins></a></li>@endif
-						 @if($userSocial->googleplus != "")<li><a target="_blank" href="{{$userSocial->googleplus}}"><ins class="fa fa-google-plus"></ins></a></li>@endif
+						 @if($userSocial->twitter != "")<li><a target="_blank" href="https://twitter.com/{{$userSocial->twitter}}"><ins class="fa fa-twitter"></ins></a></li>@endif
+						 @if($userSocial->facebook != "")<li><a target="_blank" href="https://facebook.com/{{$userSocial->facebook}}"><ins class="fa fa-facebook"></ins></a></li>@endif
+						 @if($userSocial->instagram != "")<li><a target="_blank" href="https://instagram.com/{{$userSocial->instagram}}"><ins class="fa fa-instagram"></ins></a></li>@endif
+						 @if($userSocial->googleplus != "")<li><a target="_blank" href="https://plus.google.com/{{$userSocial->googleplus}}"><ins class="fa fa-google-plus"></ins></a></li>@endif
 						 @if($userSocial->linkedin != "")<li><a target="_blank" href="{{$userSocial->linkedin}}"><ins class="fa fa-linkedin"></ins></a></li>@endif
-						 @if($userSocial->youtube != "")<li><a target="_blank" href="{{$userSocial->youtube}}"><ins class="fa fa-youtube"></ins></a></li>@endif
-						 @if($userSocial->soundcloud != "")<li><a target="_blank" href="{{$userSocial->soundcloud}}"><ins class="fa fa-soundcloud"></ins></a></li>@endif
+						 @if($userSocial->youtube != "")<li><a target="_blank" href="https://youtube.com/{{$userSocial->youtube}}"><ins class="fa fa-youtube"></ins></a></li>@endif
+						 @if($userSocial->soundcloud != "")<li><a target="_blank" href="https://soundcloud.com/{{$userSocial->soundcloud}}"><ins class="fa fa-soundcloud"></ins></a></li>@endif
 						 @if($userSocial->web != "")<li><a target="_blank" href="{{$userSocial->web}}"><ins class="fa fa-link"></ins></a></li>@endif
 					 </ul>
 					  <?php }; ?>
