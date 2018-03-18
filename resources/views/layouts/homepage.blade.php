@@ -313,7 +313,6 @@
 	<div class="clearfix" style="height: 10px;"></div>
 	</div>
 	</div>
-	 @include('layouts.partials.homepage._footer')
  </div>
  
    @include('layouts.partials.homepage._header._nav')
@@ -532,5 +531,6 @@ $(".submenu").click(function(){
 });
 
 </script> 
+@include('layouts.partials.homepage._footer')
 	</body>
 </html>
