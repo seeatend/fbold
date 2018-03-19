@@ -16,7 +16,7 @@ class UserController extends BaseAdminController {
         $this->user = $user;
     }
 
-    protected $searchTypes = ['id' => 'Id', 'email' => 'E-mail',];
+    protected $searchTypes = ['id' => 'Id', 'email' => 'E-mail', 'username' => 'Username'];
 
     public function getIndex()
     {
