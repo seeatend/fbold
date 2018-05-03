@@ -29,21 +29,29 @@ class UserController extends BaseController {
         return view('view_all_users.index');
     }
 
-    public function getSorted($category)
+    public function getSorted($category = NULL)
     {
-        $users = DB::table('users')->where('category', $category)->orderBy(
-            'username',
-            'ASC'
-        )->get();
+        if ($category) {
+            $users = DB::table('users')->where('category', $category)->orderBy(
+                'username',
+                'ASC'
+            )->get();
+        } else {
+            $users = DB::table('users')->orderBy(
+                'username',
+                'ASC'
+            )->paginate(20);
+        }
+        
 
 		$empty = [];
 		
 		if(!$users){
-         Flash::addSuccess('This tag does not have any results.');
-         return redirect()->route('index');
+            Flash::addSuccess('This tag does not have any results.');
+            return redirect()->route('index');
     	} else {
-        return view('sort.index')->with('users', $users);
-      }
+            return view('sort.index')->with('users', $users);
+        }
     }
 
     public function getFollowers($followers)
