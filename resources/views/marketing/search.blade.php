@@ -6,7 +6,7 @@
   <div class="banner-background"></div>
   <div class="container">
       <div class="row">
-          <div class="col-xs-12">
+          <div class="">
               <div class="content">
                   <h1>Search</h1>
                   <form action="/search-social-users" class="search-form-banner clearfix">
@@ -20,6 +20,31 @@
               </div>
           </div>
       </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="">
+        <h2 style="padding: 30px 0 5px; font-size: 30px; font-family: Helvetica; font-weight: 400;" class="text-center">
+          Trending Searches
+        </h2>
+        
+        <ul style="padding-left: 0px;list-style: none; display: block; text-align: center; margin: 20px auto; line-height: 2.15em;">
+          <li><a href="/sort/musician">#musician</a></li>
+          <li><a href="/NickiMinaj">Nicki Minaj</a></li>
+          <li><a href="/sort/tv">#tv</a></li>
+          <li><a href="/KhloeKardashian">Khloe Kardashian</a></li>
+          <li><a href="/followers/10M+">10 Million+ Followers</a></li>
+          <li><a href="/Lala">Lala</a></li>
+          <li><a href="/sort/athlete">#athlete</a></li>
+          <li><a href="/FloydMayweather">Floyd Mayweather</a></li>
+          <li><a href="/followers/5-10M">5-10 Millions+ Followers</a></li>
+          <li><a href="/DJKhaled">DJ Khaled</a></li>
+          <li><a href="/followers/1-5M">1-5 Millions+ Followers</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 @include ('layouts.partials.marketing.footer')

@@ -74,3 +74,6 @@
             </div>
         </div>
     </header>
+    <div class="user-messages">
+        @include('layouts.partials.frontend._messages')
+    </div>

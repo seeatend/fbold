@@ -242,82 +242,50 @@ has been sent directly to the person.</p>
     <div class="row" style="margin: 0;">
         <div class="subcategories-scroller-slider owl-carousel clearfix">
             <div class="col-xs-12 item">
-                <a href="#" class="img">
+                <a href="/sort/musician" class="img">
                     <!--                            <img src="/marketing/images/sub-1.jpg" alt="">-->
                     <div class="text">
-                        <h3>Song</h3>
+                        <h3>Musicians</h3>
                     </div>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="#" class="img">
+                <a href="/sort/radio" class="img">
                     <!--                            <img src="/marketing/images/sub-2.jpg" alt="">-->
                     <div class="text">
-                        <h3>Clothing line</h3>
+                        <h3>Radio Host</h3>
                     </div>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="#" class="img">
+                <a href="/sort/tv" class="img">
                     <!--                            <img src="/marketing/images/sub-3.jpg" alt="">-->
                     <div class="text">
-                        <h3>Profile</h3>
+                        <h3>TV Personalities</h3>
                     </div>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="#" class="img">
+                <a href="/sort/dj" class="img">
                     <!--                            <img src="/marketing/images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
-                        <h3>Health/Beauty Product</h3>
+                        <h3>DJs</h3>
                     </div>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="#" class="img">
+                <a href="/sort/model" class="img">
                     <!--                            <img src="/marketing/images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
-                        <h3>App</h3>
+                        <h3>Models</h3>
                     </div>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="#" class="img">
+                <a href="/sort/athlete" class="img">
                     <!--                            <img src="/marketing/images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
-                        <h3>Store</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 item">
-                <a href="#" class="img">
-                    <!--                            <img src="/marketing/images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
-                        <h3>Website</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 item">
-                <a href="#" class="img">
-                    <!--                            <img src="/marketing/images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
-                        <h3>Restaurant</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 item">
-                <a href="#" class="img">
-                    <!--                            <img src="/marketing/images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
-                        <h3>Event</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xs-12 item">
-                <a href="#" class="img">
-                    <!--                            <img src="/marketing/images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
-                        <h3>Book</h3>
+                        <h3>Athletes</h3>
                     </div>
                 </a>
             </div>

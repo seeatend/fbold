@@ -127,6 +127,11 @@
         ga('create', 'UA-61954822-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script>
+        $(".remove-alert").on('click', function () {
+            $(".flash-errors").hide();
+        });
+    </script>
 </body>
 
 </html>
