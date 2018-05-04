@@ -36,8 +36,8 @@ $description = "View all verified members categorized as " . $pageTitle . " on F
         $name = $user->name;
         $url = '/' . $username;
         $type = "followback";
-		  $realname = !empty($name) ? $name : $username; 
-		  $verified = DB::table('verified_users')->where('identifier',$user->id)->first();
+		    $realname = !empty($name) ? $name : $username; 
+		    $verified = DB::table('verified_users')->where('identifier',$user->id)->first();
         $social = DB::table('users_social_accounts')->where('user_id',$user->id)->pluck('reach');
       
       ?>
@@ -64,6 +64,11 @@ $description = "View all verified members categorized as " . $pageTitle . " on F
 
      
       @endforeach
+      @if($users instanceof \Illuminate\Pagination\LengthAwarePaginator )
+
+         {!! $users->render() !!}
+
+      @endif
 
     </div>
    </div>

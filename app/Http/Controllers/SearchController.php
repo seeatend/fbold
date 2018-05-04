@@ -53,7 +53,6 @@ class SearchController extends BaseController {
 
     public function getSocialSearch()
     {
-
         if (Input::has('q', 'type')) {
             try {
                 $type = Input::get('type');
@@ -71,8 +70,7 @@ class SearchController extends BaseController {
                 /*if (Request::ajax()) {
                     return Response::json($results);
                 }*/
-
-                return view('search.userResults')->with(
+                return view('marketing.search')->with(
                     'results',
                     $results
                 )->with('type', $type);

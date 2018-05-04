@@ -45,7 +45,7 @@
 
             <div class="form-group login14px">
               <div class="row">
-                <div class="col-md-6" style="float: left;">
+                <div class="col-md-6 login-col-left" style="float: left;">
                   <div class="checkbox">
                     <input name="remember" id="remember_me" class="styled" type="checkbox">
                     <label for="remember_me">
@@ -53,7 +53,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="col-md-6 text-right"  style="float: right;">
+                <div class="col-md-6 login-col-right"  style="float: right;">
                  <label><a href="{{route('remind_password')}}">Forgot Password?</a></label>
                 </div>
               </div>

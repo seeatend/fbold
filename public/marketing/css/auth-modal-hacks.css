@@ -1,0 +1,73 @@
+
+.flash-errors .remove-alert { float: right; }
+#basic-addon2 {
+    display: none;
+}
+.info {
+    display: none;
+}
+.login-col-left {
+    text-align: right;
+}
+.login-col-right {
+    padding-top: 10px;  
+}
+.box_close {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    border: 1px solid #E7EAF1;
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1;
+    border-radius: 1px 3px 1px 1px;
+    padding: 10px;
+}
+.login_sign_up_title {
+    font-family: "Helvetica Neue LT W04_55 Roman", Lato, Helvetica, sans-serif !important;
+    color: #998da2;
+    padding-top: 10px;
+}
+.modal-dialog .main_logo {
+    width: 220px;
+    height: 31px;
+    margin-bottom: 12px;
+    background: url(/images/login-logo.png) no-repeat;
+    background-size: 100%;
+    margin-top: 15px;
+    display: block;
+    margin-left: 55px;
+
+}
+.modal-dialog {
+    width: 432px;
+    border-radius: 0px;
+    padding: 39px;
+    text-align: center;
+    margin: 0 auto;
+}
+.btn-primary {
+    background: #0600fc;
+}
+
+.login_sign_up_title {
+    font-family: "Helvetica Neue LT W04_55 Roman", Lato, Helvetica, sans-serif !important;
+    color: #998da2
+}
+
+.login_sign_up_optional {
+    font-family: "Helvetica Neue LT W04_55 Roman", Lato, Helvetica, sans-serif !important;
+    margin-bottom: 17px;
+    color: #AEAEAE;
+    font-weight: 300
+}
+
+#sign_up_footer {
+    font-family: "Helvetica Neue LT W04_55 Roman", Lato, Helvetica, sans-serif !important;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #79919b;
+    line-height: 1.2
+}
