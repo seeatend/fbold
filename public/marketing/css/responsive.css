@@ -1,1 +1,313 @@
-@media (min-width: 768px){.main-header .navbar-brand{padding-left:10px}}@media (max-width: 991px){.faq-content .title{margin-top:50px}.footer-logo,.footer-icon{text-align:center}.footer-icon{margin-top:20px}.verify-banner .overlay{min-height:500px}.promote .right{padding-left:50px}.cloude-service .service-item{display:block}.cloude-service .item .content{max-width:306px;margin:0 auto;margin-bottom:30px}.conunt-2 .item h3{font-size:39px}.conunt-2 .item p{font-size:17px}.search-form-banner input{height:26px;width:100%;font-size:15px;padding-left:25px;padding-right:0}.search-form-banner i{top:16px;font-size:18px;left:10px}.search-form-banner{max-width:540px}.search-form-banner button{display:none}}@media (max-width: 767px){.banner .content h1{font-size:40px}.banner{min-height:450px}.section-head h2{font-size:35px}.section-head p{font-size:20px}.works .item .text{padding-left:30px}.promote .right{padding-left:30px}.trust-banner h1{font-size:59px}.section-head p br{display:none}.about-banner h1{font-size:50px}.banner-bottom h2{font-size:38px}.conunt-2 .border-right::after{display:none}.conunt-2 .item{padding:15px 0}.navbar-toggle{margin-top:22px}.main-header .navbar-default .navbar-nav>li>a{padding:8px 15px}.navbar-header{height:61px}.main-header .navbar-brand{padding:22px 0;float:none;display:block;width:160px;margin:0 auto}.navbar-collapse{width:100%}.navbar-toggle{margin-top:14px;margin-right:0;margin-left:5px;float:left}.navbar-default .navbar-toggle{border-color:transparent}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:transparent}.main-header .navbar-default{padding-right:0}.main-header .container-fluid{padding:0}.main-header .navbar-nav{margin:0 -15px}.main-header .navbar-default .navbar-nav>li>a{color:#5e5e5e;border-bottom:1px solid #dddddd;padding:14px 15px}.main-header .navbar-default .navbar-nav>li>a:hover{background:#eeeeee;color:#999999;border-color:#dddddd}.navbar-fixed-top .navbar-default .navbar-nav>li:last-child>a{border-bottom-color:transparent}.service .service-wraper .item{margin-bottom:30px}}@media (max-width: 575px){.works .item .img{width:100%;margin-top:0 !important;text-align:center;margin-bottom:0;float:none;position:static;display:block}.works .item{padding-bottom:110px;display:block}.works .item .text{width:100%;padding:0;text-align:center}.works .item .text .number{margin:0 auto;margin-bottom:15px;display:none}.works .step-mobile{display:block;margin-bottom:15px}.why-us .item-right{margin-left:0}.why-us .item{max-width:100%;text-align:center}.why-us .item::after{margin:0 auto;right:0}.banner .content h1{font-size:35px}.banner{background-position:right}.verify-banner{background-position:center}.verify-banner .overlay{min-height:400px}.buyer-faq-banner h1{font-size:26px}.buyer-faq-banner p{font-size:18px}.section-head.with-icon h2{font-size:23px}.buyer-faq-banner .overlay{min-height:400px}.promote .right{padding:30px 15px}.conunt .item{padding:25px 0}.conunt .border-right::after{display:none}.buyer-faq-banner h3{font-size:20px}.section-head h2,.works .item .text .title,.vision h3{font-size:28px}.section-head p,.works .item .text p,.vision p{font-size:18px}.why-us .item .title{font-size:18px}.works{padding-bottom:75px}.subcategories-scroller{padding-top:75px}.vision .item{padding-bottom:60px}.vision{padding-top:66px}.logo-patner{padding-top:67px}.logo-patner{max-width:100%;padding-top:67px}.search-form-banner i{display:none}.search-form-banner input{padding-left:0}.works .item .text,.vision p{max-width:310px;margin:0 auto;float:none}}@media (max-width: 480px){.banner-button{font-size:18px}.footer-bottom .copy{display:block;margin-top:10px}.banner .content h1{font-size:23px}.banner{min-height:400px}.verity-content .content h3{font-size:23px}.section-head.with-icon h2 img{display:none}.conunt-2 .item br{display:none}.conunt-2 .item h3{font-size:35px}.banner-bottom h2{font-size:35px}.about-banner br{display:none}.banner-contact h2{font-size:22px}.banner-contact p{font-size:14px}}
+@media (min-width: 768px) {
+    .main-header .navbar-brand {
+        padding-left: 10px
+    }
+}
+
+@media (max-width: 991px) {
+    .faq-content .title {
+        margin-top: 50px
+    }
+    .footer-logo,
+    .footer-icon {
+        text-align: center
+    }
+    .footer-icon {
+        margin-top: 20px
+    }
+    .verify-banner .overlay {
+        min-height: 500px
+    }
+    .promote .right {
+        padding-left: 50px
+    }
+    .cloude-service .service-item {
+        display: block
+    }
+    .cloude-service .item .content {
+        max-width: 306px;
+        margin: 0 auto;
+        margin-bottom: 30px
+    }
+    .conunt-2 .item h3 {
+        font-size: 39px
+    }
+    .conunt-2 .item p {
+        font-size: 17px
+    }
+    .search-form-banner input {
+        height: 26px;
+        width: 100%;
+        font-size: 15px;
+        padding-left: 25px;
+        padding-right: 0
+    }
+    .search-form-banner i {
+        top: 16px;
+        font-size: 18px;
+        left: 10px
+    }
+    .search-form-banner {
+        max-width: 540px
+    }
+    .search-form-banner button {
+        display: none
+    }
+}
+
+@media (max-width: 767px) {
+    .banner .content h1 {
+        font-size: 40px
+    }
+    .banner {
+        min-height: 450px
+    }
+    .section-head h2 {
+        font-size: 35px
+    }
+    .section-head p {
+        font-size: 20px
+    }
+    .works .item .text {
+        padding-left: 30px
+    }
+    .promote .right {
+        padding-left: 30px
+    }
+    .trust-banner h1 {
+        font-size: 59px
+    }
+    .section-head p br {
+        display: none
+    }
+    .about-banner h1 {
+        font-size: 50px
+    }
+    .banner-bottom h2 {
+        font-size: 38px
+    }
+    .conunt-2 .border-right::after {
+        display: none
+    }
+    .conunt-2 .item {
+        padding: 15px 0
+    }
+    .navbar-toggle {
+        margin-top: 22px
+    }
+    .main-header .navbar-default .navbar-nav>li>a {
+        padding: 8px 15px
+    }
+    .navbar-header {
+        height: 61px
+    }
+    .main-header .navbar-brand {
+        padding: 22px 0;
+        float: none;
+        display: block;
+        width: 160px;
+        margin: 0 auto
+    }
+    .navbar-collapse {
+        width: 100%
+    }
+    .navbar-toggle {
+        margin-top: 14px;
+        margin-right: 0;
+        margin-left: 5px;
+        float: left
+    }
+    .navbar-default .navbar-toggle {
+        border-color: transparent
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent
+    }
+    .main-header .navbar-default {
+        padding-right: 0
+    }
+    .main-header .container-fluid {
+        padding: 0
+    }
+    .main-header .navbar-nav {
+        margin: 0 -15px
+    }
+    .main-header .navbar-default .navbar-nav>li>a {
+        color: #5e5e5e;
+        border-bottom: 1px solid #dddddd;
+        padding: 14px 15px
+    }
+    .main-header .navbar-default .navbar-nav>li>a:hover {
+        background: #eeeeee;
+        color: #999999;
+        border-color: #dddddd
+    }
+    .navbar-fixed-top .navbar-default .navbar-nav>li:last-child>a {
+        border-bottom-color: transparent
+    }
+    .service .service-wraper .item {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width: 575px) {
+    .works .item .img {
+        width: 100%;
+        margin-top: 0 !important;
+        text-align: center;
+        margin-bottom: 0;
+        float: none;
+        position: static;
+        display: block
+    }
+    .works .item {
+        padding-bottom: 110px;
+        display: block
+    }
+    .works .item .text {
+        width: 100%;
+        padding: 0;
+        text-align: center
+    }
+    .works .item .text .number {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        display: none
+    }
+    .works .step-mobile {
+        display: block;
+        margin-bottom: 15px
+    }
+    .why-us .item-right {
+        margin-left: 0
+    }
+    .why-us .item {
+        max-width: 100%;
+        text-align: center
+    }
+    .why-us .item::after {
+        margin: 0 auto;
+        right: 0
+    }
+    .banner .content h1 {
+        font-size: 35px
+    }
+    .banner {
+        background-position: right
+    }
+    .verify-banner {
+        background-position: center
+    }
+    .verify-banner .overlay {
+        min-height: 400px
+    }
+    .buyer-faq-banner h1 {
+        font-size: 26px
+    }
+    .buyer-faq-banner p {
+        font-size: 18px
+    }
+    .section-head.with-icon h2 {
+        font-size: 23px
+    }
+    .buyer-faq-banner .overlay {
+        min-height: 400px
+    }
+    .promote .right {
+        padding: 30px 15px
+    }
+    .conunt .item {
+        padding: 25px 0
+    }
+    .conunt .border-right::after {
+        display: none
+    }
+    .buyer-faq-banner h3 {
+        font-size: 20px
+    }
+    .section-head h2,
+    .works .item .text .title,
+    .vision h3 {
+        font-size: 28px
+    }
+    .section-head p,
+    .works .item .text p,
+    .vision p {
+        font-size: 18px
+    }
+    .why-us .item .title {
+        font-size: 18px
+    }
+    .works {
+        padding-bottom: 75px
+    }
+    .subcategories-scroller {
+        padding-top: 75px
+    }
+    .vision .item {
+        padding-bottom: 60px
+    }
+    .vision {
+        padding-top: 66px
+    }
+    .logo-patner {
+        padding-top: 67px
+    }
+    .logo-patner {
+        max-width: 100%;
+        padding-top: 67px
+    }
+    .search-form-banner i {
+        display: none
+    }
+    .search-form-banner input {
+        padding-left: 0
+    }
+    .works .item .text,
+    .vision p {
+        max-width: 310px;
+        margin: 0 auto;
+        float: none
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-button {
+        font-size: 18px
+    }
+    .footer-bottom .copy {
+        display: block;
+        margin-top: 10px
+    }
+    .banner .content h1 {
+        font-size: 23px
+    }
+    .banner {
+        min-height: 400px
+    }
+    .verity-content .content h3 {
+        font-size: 23px
+    }
+    .section-head.with-icon h2 img {
+        display: none
+    }
+    .conunt-2 .item br {
+        display: none
+    }
+    .conunt-2 .item h3 {
+        font-size: 35px
+    }
+    .banner-bottom h2 {
+        font-size: 35px
+    }
+    .about-banner br {
+        display: none
+    }
+    .banner-contact h2 {
+        font-size: 22px
+    }
+    .banner-contact p {
+        font-size: 14px
+    }
+}

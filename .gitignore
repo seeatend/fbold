@@ -1,5 +1,6 @@
 /node_modules
 /public/hot
+/public/bids_images/*
 storage/framework/cache/*
 storage/framework/sessions/*
 storage/framework/views/*
@@ -15,3 +16,5 @@ yarn-error.log
 .env
 /vendor
 storage/logs/laravel.log
+.DS_Store
+.DS_Store?

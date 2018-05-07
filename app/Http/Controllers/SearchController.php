@@ -67,10 +67,7 @@ class SearchController extends BaseController {
                 //Exclude those Users who set their Public Profile hidden
                 $results = $this->excludePublicProfileHiddenUser($results);
 
-                /*if (Request::ajax()) {
-                    return Response::json($results);
-                }*/
-                return view('marketing.search')->with(
+                return view('search.userResults')->with(
                     'results',
                     $results
                 )->with('type', $type);

@@ -231,7 +231,7 @@ class AuthController extends BaseController {
             }
 
             Flash::addSuccess('You have been logged in successfully.');
-            return redirect()->intended(URL::route('profile_connect'))->withInput(
+            return redirect()->intended(route('profile_connect'))->withInput(
             );
 
         } catch (Exception $e) {

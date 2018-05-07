@@ -80,7 +80,10 @@
     <script src="/marketing/js/jquery.js" type="text/javascript"></script>
     <script src="/marketing/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="/marketing/js/owl.carousel.min.js" type="text/javascript"></script>
-    <script src="/marketing/js/custom.js" type="text/javascript"></script>
+    <script src="/marketing/js/custom.js?v=1.2" type="text/javascript"></script>
+    <script type="text/javascript" src="{{asset('assets/js/site.js')}}?v=1.4"></script>
+    <script type="text/javascript" src="{{asset('assets/js/plugins.js')}}"></script>
+  <script type="text/javascript" src="{{asset('assets/js/main.js')}}"></script>
     <!-- begin olark code -->
     <script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
     /* custom configuration goes here (www.olark.com/documentation) */
