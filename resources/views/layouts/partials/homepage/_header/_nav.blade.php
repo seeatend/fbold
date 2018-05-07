@@ -1,27 +1,38 @@
 <?php $BASE_PATH = Config::get('otherconstants'); ?>
-
+<style>
+  .marketing-nav-item {
+    color: #6b6b6b;
+    font-size: 14px;
+    letter-spacing: .01em;
+    border-bottom: 2px solid transparent;
+  }
+  .marketing-nav-item:hover {
+    border-bottom-color: #0600fc;
+  }
+</style>
 @if(\Sentry::check())
 <nav id="topnav" class="wrapper">
 	<div class="nav-content">
 		<ul>	
 			<li class="logo"><a href="/"></a></li>
 
-	<li class="right"><a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a>
-			<span class="submenu-item">
-					 <a href="{{ route('auth_logout') }}" title="Log out">Log out</a>
-				</span>
+	<li class="right">
+    {{-- <a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a> --}}
+			{{-- <span class="submenu-item"> --}}
+					 <a class="marketing-nav-item" href="{{ route('auth_logout') }}" title="Log out"><span class="vcenter"><span class="valign">Log out</span></span></a>
+				{{-- </span> --}}
 			
 			</li>
-				<li class="right"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
-			<li><a href="/socialtasks"><span class="vcenter"><span class="valign">Tasks</span></span></a></li>
+				{{-- <li class="right"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li> --}}
+			<li><a class="marketing-nav-item" href="/socialtasks"><span class="vcenter"><span class="valign">Requests</span></span></a></li>
 		
 			
 			
 		
 			{{-- <li class="right"><a href="#" class="nav-profile"><span class="vcenter"><span class="profile-avatar" style="background: url(@if(Sentry::getUser()->avatar) '{{Sentry::getUser()->avatar}}'   @else '/assets/images/homepage/default-user.png' @endif) center no-repeat; border-radius: 200px; width: 55px; height: 55px; float: right; background-size: cover;"></span></span></a></li> --}}
 		
-			<li class="right"><a href="#" class="RunSearch"><span class="vcenter"><span class="valign"><ins class="fa fa-search"></ins></span></span></a></li>
-			<li><a href="/#tags"  class="internal"><span class="vcenter"><span class="valign" style="line-height: 65px; font-family: Arial; font-weight: 900; font-size: 21px;">#</span></span></a></li>
+			<li class="right"><a href="#" class="marketing-nav-item RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
+			<li><a href="/#cat"  class="marketing-nav-item internal"><span class="vcenter"><span class="valign" style="">Categories</span></span></a></li>
 		</ul>	
 	</div>
 </nav>
@@ -34,8 +45,8 @@
 			<li class="right"><a href="/#" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal"><span class="vcenter"><span class="valign">Sign&nbsp;up</span></span></a></li>
 						<li><a href="/#how_it_works"  class="internal"><span class="vcenter"><span class="valign">Help</span></span></a></li>
 
-			<li class="right"><a href="#" class="RunSearch"><span class="vcenter"><span class="valign"><ins class="fa fa-search"></ins></span></span></a></li>
-			<li><a href="/#tags"  class="internal"><span class="vcenter"><span class="valign" style="line-height: 65px; font-family: Arial; font-weight: 900; font-size: 21px;">#</span></span></a></li>
+			<li class="right"><a href="#" class="RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
+			<li><a href="/#cat"  class="internal"><span class="vcenter"><span class="valign" style="line-height: 65px; font-family: Arial; font-weight: 900; font-size: 21px;">Categories</span></span></a></li>
 			{{-- <li><a href="/about"><span class="vcenter"><span class="valign">About</span></span></a></li> --}}
 		</ul>	
 	</div>
@@ -49,7 +60,7 @@
         <li id="menu_home"><a href="/"></a></li>
       
         @if(\Sentry::check())
-          <li><a style="color: #f2ec3f" href="/socialtasks" title="Social Media Tasks">Tasks</a>
+          <li><a style="color: #f2ec3f" href="/socialtasks" title="Social Media Tasks">Requests</a>
           </li>
           
            <li>
@@ -74,7 +85,7 @@
           @if(!\Sentry::check())
             <a style="color: #fc0306" data-toggle="modal" data-backdrop="true" data-target="#LoginModal" title="Log in" href="#">Log in</a>
           @else
-            <a style="color: #2dff41" href="{{ route('profile_followback_profile') }}" title="Settings">Settings</a>
+            {{-- <a style="color: #2dff41" href="{{ route('profile_followback_profile') }}" title="Settings">Settings</a> --}}
           @endif
         </li>
         @if(\Sentry::check())

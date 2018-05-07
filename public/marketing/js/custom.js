@@ -2,11 +2,11 @@
 
 $(document).scroll(function (e) {
 		    var scrollTop = $(document).scrollTop();
-		    if (scrollTop > 0) {
-		        $('.main-header').removeClass('navbar-static-top').addClass('navbar-fixed-top');
-		    } else {
-		        $('.main-header').removeClass('navbar-fixed-top').addClass('navbar-static-top');
-		    }
+		    // if (scrollTop > 0) {
+		    //     $('.main-header').removeClass('navbar-static-top').addClass('navbar-fixed-top');
+		    // } else {
+		    //     $('.main-header').removeClass('navbar-fixed-top').addClass('navbar-static-top');
+		    // }
 		});
 
 //smooth scroll=========================================
@@ -139,19 +139,19 @@ $(document).scroll(function (e) {
 		    }
 		});
 // Search Container
-$('#home-search-input').focus(function () {
-	$(this).val(" ");
-    $('#search-container').fadeIn();
-    $("#search-input").focus();
-    $(".wrapper,#wrapper").hide();
-    $gate == "open";
-}).click(function(){
-	$(this).val(" ");
-	$gate = "close";
-    $('#search-container').fadeIn();
-    $("#search-input").focus();
-    $(".wrapper,#wrapper").hide();
-});
+// $('#home-search-input').focus(function () {
+// 	$(this).val(" ");
+//     $('#search-container').fadeIn();
+//     $("#search-input").focus();
+//     $(".wrapper,#wrapper").hide();
+//     $gate == "open";
+// }).click(function(){
+// 	$(this).val(" ");
+// 	$gate = "close";
+//     $('#search-container').fadeIn();
+//     $("#search-input").focus();
+//     $(".wrapper,#wrapper").hide();
+// });
 
 $(".ModalSignup").click(function(){
    $("#LoginModal").modal('hide');

@@ -26669,7 +26669,7 @@ jQuery(document).ready(function () {
     
     $gate = "open";
 
-    $('#home-search-input').focus(function () {
+    $('#home-search-input, .home-search-input').focus(function () {
     	 $(this).val(" ");
         $('#search-container').fadeIn();
         $("#search-input").focus();
@@ -26733,18 +26733,19 @@ $('#search-input').blur(function () {
     
 
    $(".RunSearch, #mobile_menu_search").click(function () {
-    	if($("#search-container:visible").length){
-       $('#search-container').delay(100).fadeOut('300', function () {
-            $('#search_results').html('');
-            $("#search-input").val(' ');
-              $(".wrapper,#wrapper").show();
-              $("body").removeClass("SearchOn");
-                $gate = "open";
-            counter = $(".profile-result").length;
-        });
+      // if($("#search-container:visible").length){
+      //   alert('heres');
+      //  $('#search-container').delay(100).fadeOut('300', function () {
+      //       $('#search_results').html('');
+      //       $("#search-input").val(' ');
+      //         $(".wrapper,#wrapper").show();
+      //         $("body").removeClass("SearchOn");
+      //           $gate = "open";
+      //       counter = $(".profile-result").length;
+      //   });
         
 	       	
-      } else { 
+      // } else { 
       	
         $('#search-container').show();
         $("#search-input").focus();
@@ -26753,7 +26754,7 @@ $('#search-input').blur(function () {
         $gate = "close";
  			
       
-      }  
+      // }  
         return false;
     });
  
@@ -27510,7 +27511,6 @@ function showProfilePageLoader() {
 }
 
 function getHomeSearch(object) {
-
     var $this = object;
     var searchType = 'followback';
     var searchURL = $(".form-search-users").attr('action');
