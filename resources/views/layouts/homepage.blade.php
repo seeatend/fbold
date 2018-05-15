@@ -31,8 +31,10 @@
     <meta property="og:image" content="http://www.followback.com/assets/images/logo.png">
     <meta property="og:image" content="@if (isset($avatar)){{ 'http://www.followback.com'.$avatar }} @else {{ 'http://www.followback.com/assets/images/homepage/homepage.jpg'  }} @endif ">
     <meta property="og:url" content="<?php echo $current_url; ?>"/>
+    {{-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" /> --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="csrf-token" content="<?= csrf_token() ?>">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
    
     <link rel="shortcut icon" sizes="32x32" href="{{ asset('favicon.ico') }}">
     <link rel="apple-touch-icon" href="/favicon.png"/>

@@ -14,7 +14,7 @@
 <nav id="topnav" class="wrapper">
 	<div class="nav-content">
 		<ul>	
-			<li class="logo"><a href="/"></a></li>
+			<li class="logo" style="width:160px;"><a href="/"></a></li>
 
 	<li class="right">
     {{-- <a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a> --}}

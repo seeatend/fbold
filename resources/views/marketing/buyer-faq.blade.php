@@ -7,7 +7,7 @@
                 <div class="col-xs-12 text-center">
                     <h1 style="color: #494949">Frequently asked questions about sending requests</h1>
                     <div style="max-width: 305px;margin: 0 auto;">
-                        <a href="#" class="btn banner-button">Send a Request Today</a>
+                        <a href="#" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal" class="btn banner-button">Send a Request Today</a>
                     </div>
                 </div>
             </div>

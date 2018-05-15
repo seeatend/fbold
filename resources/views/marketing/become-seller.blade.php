@@ -7,7 +7,7 @@
                 <div class="col-xs-12 text-center">
                     <h1>The easiest way to earn money on social media</h1>
                     <div style="max-width: 305px;margin: 0 auto;">
-                        <a href="#" class="btn banner-button">Sign up now</a>
+                        <a href="#" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal" class="btn banner-button">Sign up now</a>
                     </div>
                 </div>
             </div>
