@@ -7,7 +7,7 @@
                 <div class="col-xs-12 text-center">
                     <h1 style="color: #494949">Frequently asked questions about monetizing</h1>
                     <div style="max-width: 310px;margin: 0 auto;">
-                        <a href="#" class="btn banner-button">Sign Up Today</a>
+                        <a href="#" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal" class="btn banner-button">Sign Up Today</a>
                     </div>
                 </div>
             </div>

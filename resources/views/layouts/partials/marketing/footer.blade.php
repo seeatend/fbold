@@ -20,7 +20,7 @@
                         <div class="widget">
                             <h3>Support</h3>
                             <ul class="list">
-                                <li><a href="/support">Contact Support</a></li>
+                                <li><a href="javascript:void(0);" onclick="olark('api.box.expand')">Contact Support</a></li>
                                 <li><a href="/trust">Trust & Safety</a></li>
                                 <li><a href="/verify">How to get Verified</a></li>
                                 <li><a href="/buyer-faq"> Requesting FAQ</a></li>
@@ -78,7 +78,7 @@
         </div>
     </footer>
     <script src="/marketing/js/jquery.js" type="text/javascript"></script>
-    <script src="/marketing/js/bootstrap.min.js" type="text/javascript"></script>
+    {{-- <script src="/marketing/js/bootstrap.min.js" type="text/javascript"></script> --}}
     <script src="/marketing/js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="/marketing/js/custom.js?v=1.2" type="text/javascript"></script>
     <script type="text/javascript" src="{{asset('assets/js/site.js')}}?v=1.4"></script>
