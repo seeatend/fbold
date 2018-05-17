@@ -16,14 +16,14 @@
 		<ul>	
 			<li class="logo" style="width:160px;"><a href="/"></a></li>
 
-	<li class="right">
-    {{-- <a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a> --}}
-			{{-- <span class="submenu-item"> --}}
+	<li class="right marketing-nav-item">
+    <a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a>
+			<span class="submenu-item">
 					 <a class="marketing-nav-item" href="{{ route('auth_logout') }}" title="Log out"><span class="vcenter"><span class="valign">Log out</span></span></a>
-				{{-- </span> --}}
+				</span>
 			
 			</li>
-				{{-- <li class="right"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li> --}}
+				<li class="right marketing-nav-item"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
 			<li><a class="marketing-nav-item" href="/socialtasks"><span class="vcenter"><span class="valign">Requests</span></span></a></li>
 		
 			

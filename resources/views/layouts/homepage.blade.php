@@ -31,8 +31,7 @@
     <meta property="og:image" content="http://www.followback.com/assets/images/logo.png">
     <meta property="og:image" content="@if (isset($avatar)){{ 'http://www.followback.com'.$avatar }} @else {{ 'http://www.followback.com/assets/images/homepage/homepage.jpg'  }} @endif ">
     <meta property="og:url" content="<?php echo $current_url; ?>"/>
-    {{-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" /> --}}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
     <meta name="csrf-token" content="<?= csrf_token() ?>">
 
    
@@ -44,7 +43,7 @@
     <link href="{{asset('assets/css/bootstrap-theme.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/css/bootstrap-toggle.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/css/awesome-bootstrap-checkbox.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('assets/css/app.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/css/app.css?v=1.1')}}" rel="stylesheet" type="text/css">
     <!-- <link type="text/css" rel="stylesheet" href="bootstrap-toggle.min.css,awesome-bootstrap-checkbox.css,app.css" /> -->
      <link rel="canonical" href="<?php echo $current_url; ?>"/>
 
