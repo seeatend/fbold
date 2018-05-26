@@ -22,7 +22,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12 item text-center">
                 <div class="content">
                     <div class="img">
-                        <img src="/marketing/images/cloude-1.png" alt="">
+                        <img src="/assets/images/icon01.svg" style="height: 100px" alt="">
                     </div>
                     <h4>Data Security</h4>
                     <p>Any information and files you share on Followback are stored on the industry’s leading secured data servers.</p>
@@ -31,7 +31,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12 item text-center">
                 <div class="content">
                     <div class="img">
-                        <img src="/marketing/images/cloude-2.png" alt="">
+                        <img src="/assets/images/icon02.svg" style="height: 100px" alt="">
                     </div>
                     <h4>Safe Payments</h4>
                     <p>All transactions are processed by the world’s most trusted payment processor. Followback never stores any sensitive credit card information.</p>
@@ -40,7 +40,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12 item text-center">
                 <div class="content">
                     <div class="img">
-                        <img src="/marketing/images/cloude-3.png" alt="">
+                        <img src="/assets/images/icon03.svg" style="height: 100px" alt="">
                     </div>
                     <h4>Money-Back Guarantee</h4>
                     <p>We guarantee that your social media task will be completed, or you’ll never be charged.</p>
@@ -49,7 +49,7 @@
             <div class="col-md-3 col-sm-6 col-xs-12 item text-center">
                 <div class="content">
                     <div class="img">
-                        <img src="/marketing/images/cloude-3.png" alt="">
+                        <img src="/assets/images/icon04.svg" style="height: 100px" alt="">
                     </div>
                     <h4>Verified Accounts</h4>
                     <p>All accounts with a blue checkmark have been vetted by our team and are authentic.</p>

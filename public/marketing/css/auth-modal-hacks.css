@@ -10,7 +10,8 @@
     text-align: right;
 }
 .login-col-right {
-    padding-top: 10px;  
+    padding-top: 0px;
+    margin-top: -1px;
 }
 .box_close {
     height: 40px;

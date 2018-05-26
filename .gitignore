@@ -18,3 +18,4 @@ yarn-error.log
 storage/logs/laravel.log
 .DS_Store
 .DS_Store?
+/storage/*

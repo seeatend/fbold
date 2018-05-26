@@ -46,7 +46,7 @@
             <div class="form-group login14px">
               <div class="row">
                 <div class="col-md-6 login-col-left" style="float: left;">
-                  <div class="checkbox">
+                  <div class="checkbox checkbox_modal">
                     <input name="remember" id="remember_me" class="styled" type="checkbox">
                     <label for="remember_me">
                       Remember Me

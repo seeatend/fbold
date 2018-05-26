@@ -1214,7 +1214,6 @@ Route::get(
 Route::group(
     ['prefix' => '{username}'],
     function () {
-
         //Route::get('/',array('as'=>'bid_create' , 'middleware'=>'blockedBid|bidsLeft', 'uses'=>'BidController@getCreate'));
         Route::get(
             '/',
