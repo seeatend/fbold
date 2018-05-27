@@ -9,6 +9,18 @@
   .marketing-nav-item:hover {
     border-bottom-color: #0600fc;
   }
+  .checkbox_modal {
+      float: left;
+      margin-left: 0px;
+  }
+  .checkbox label, .radio label {
+      min-height: 20px;
+      padding-left: 10px;
+  }
+  .login14px label, .login14px a {
+      font-size: 12px;
+      float: right;
+  }
 </style>
 @if(\Sentry::check())
 <nav id="topnav" class="wrapper">
@@ -20,41 +32,34 @@
             <li class="logo"><a href="/"></a></li>
         </ul>
     </div>
-	<div class="nav-content">
+	<div class="nav-content hidden-xs ">
 		<ul>	
 			<li class="logo" style="width:160px;"><a href="/"></a></li>
 
-	<li class="right marketing-nav-item">
+	<li class="right marketing-nav-item hidden-sm">
     <a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a>
 			<span class="submenu-item">
 					 <a class="marketing-nav-item" href="{{ route('auth_logout') }}" title="Log out"><span class="vcenter"><span class="valign">Log out</span></span></a>
 				</span>
 			
 			</li>
-				<li class="right marketing-nav-item"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
-			<li><a class="marketing-nav-item" href="/socialtasks"><span class="vcenter"><span class="valign">Requests</span></span></a></li>
+				<li class="right marketing-nav-item hidden-sm"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
+			<li  class="hidden-sm"><a class="marketing-nav-item" href="/socialtasks"><span class="vcenter"><span class="valign">Requests</span></span></a></li>
 		
 			
 			
 		
 			{{-- <li class="right"><a href="#" class="nav-profile"><span class="vcenter"><span class="profile-avatar" style="background: url(@if(Sentry::getUser()->avatar) '{{Sentry::getUser()->avatar}}'   @else '/assets/images/homepage/default-user.png' @endif) center no-repeat; border-radius: 200px; width: 55px; height: 55px; float: right; background-size: cover;"></span></span></a></li> --}}
 		
-			<li class="right"><a href="#" class="marketing-nav-item RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
-			<li><a href="/#cat"  class="marketing-nav-item internal"><span class="vcenter"><span class="valign" style="">Categories</span></span></a></li>
+			<li class="right hidden-sm"><a href="#" class="marketing-nav-item RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
+			<li class="hidden-sm"><a href="/#cat"  class="marketing-nav-item internal"><span class="vcenter"><span class="valign" style="">Categories</span></span></a></li>
 		</ul>	
 	</div>
     <div class="collapse navbar-collapse" style="display: none" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right visible-xs" style="width: auto !important;">
+        <ul class="nav navbar-nav navbar-right visible-xs" style="background: #eee;height: auto;">
 
-                <li class="logo" style="width:160px;"><a href="/"></a></li>
 
-                <li class="right marketing-nav-item">
-                    <a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a>
-                    <span class="submenu-item">
-					 <a class="marketing-nav-item" href="{{ route('auth_logout') }}" title="Log out"><span class="vcenter"><span class="valign">Log out</span></span></a>
-				</span>
 
-                </li>
                 <li class="right marketing-nav-item"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
                 <li><a class="marketing-nav-item" href="/socialtasks"><span class="vcenter"><span class="valign">Requests</span></span></a></li>
 
@@ -65,7 +70,13 @@
 
                 <li class="right"><a href="#" class="marketing-nav-item RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
                 <li><a href="/#cat"  class="marketing-nav-item internal"><span class="vcenter"><span class="valign" style="">Categories</span></span></a></li>
+            <li class="right marketing-nav-item" style="height: auto;">
+                <a href="#" class="submenu"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a>
+                <span class="submenu-item">
+					 <a class="marketing-nav-item" href="{{ route('auth_logout') }}" title="Log out"><span class="vcenter"><span class="valign">Log out</span></span></a>
+				</span>
 
+            </li>
         </ul>
     </div>
 
@@ -73,7 +84,7 @@
 @else
 
 <nav id="topnav" class="wrapper">
-    <div class="navbar-header visible-xs">
+    <div class="navbar-header visible-xs visible-md">
         <button type="button" onclick="showMenu()" id="nav-hamburger" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19"><g fill="none"><g fill="#555"><rect y="16" width="23" height="3" rx="1.5"></rect><rect width="23" height="3" rx="1.5"></rect><rect y="8" width="23" height="3" rx="1.5"></rect></g></g></svg>
         </button>
@@ -84,12 +95,12 @@
 	<div class="nav-content hidden-xs">
 		<ul>
 			<li class="logo"><a href="/"></a></li>
-			<li class="right"><a href="/#" data-toggle="modal" data-backdrop="true" data-target="#LoginModal"><span class="vcenter"><span class="valign">Log&nbsp;in</span></span></a></li>
-			<li class="right"><a href="/#" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal"><span class="vcenter"><span class="valign">Sign&nbsp;up</span></span></a></li>
-						<li><a href="/#how_it_works"  class="internal"><span class="vcenter"><span class="valign">Help</span></span></a></li>
+			<li class="right hidden-sm"><a href="/#" data-toggle="modal" data-backdrop="true" data-target="#LoginModal"><span class="vcenter"><span class="valign">Log&nbsp;in</span></span></a></li>
+			<li class="right hidden-sm"><a href="/#" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal"><span class="vcenter"><span class="valign">Sign&nbsp;up</span></span></a></li>
+						<li class="hidden-sm"><a href="/#how_it_works"  class="internal"><span class="vcenter"><span class="valign">Help</span></span></a></li>
 
-			<li class="right"><a href="#" class="RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
-			<li><a href="/#cat"  class="internal"><span class="vcenter"><span class="valign" style="line-height: 65px; font-family: Arial; font-weight: 900; font-size: 21px;">Categories</span></span></a></li>
+			<li class="right hidden-sm"><a href="#" class="RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
+			<li class="hidden-sm"><a href="/#cat"  class="internal "><span class="vcenter"><span class="valign" style="line-height: 65px; font-family: Arial; font-weight: 900; font-size: 21px;">Categories</span></span></a></li>
 			{{-- <li><a href="/about"><span class="vcenter"><span class="valign">About</span></span></a></li> --}}
 		</ul>
 	</div>

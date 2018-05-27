@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="content">
-                    <h3>About verified accounts <i class="fas fa-check-circle"></i></h3>
+                    <h3>About verified accounts <img src="{{ url('/assets/images/icon04.svg') }}" style="height: 30px;vertical-align: middle;"/></h3>
                     <p>The blue verified badge on Followback lets people know that an account of public interest is authentic. The badge appears next to the name on an account’s profile. It is always the same color and placed in the same location. Accounts that don’t have the blue verified badge next to their name but that display it somewhere else, for example in the profile photo, header photo or bio are not verified accounts. Verified badges must be applied by Followback, and accounts that use a badge as a part of profile photos, background photos, or in any other way that implies verified status, are subject to permanent account suspension.</p>
                 </div>
             </div>

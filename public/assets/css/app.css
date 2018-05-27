@@ -1063,7 +1063,7 @@ select:focus {
 .search_results .profile-result.verified .profile_verified {
     display: inline-block;
     cursor: pointer;
-    background: url(/images/verified-icon-blue.png) center no-repeat !important;
+    background: url(/assets/images/icon04.svg) center no-repeat !important;
     background-size: contain !important
 }
 
@@ -4691,7 +4691,7 @@ html body #network .choose-net {
     padding: 0px !important
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 990px) {
     #topnav UL li.logo a {
         width: 100%;
     }
@@ -4734,21 +4734,41 @@ html body #network .choose-net {
         padding-left: 6px;
     }
     .login14px label, .login14px a {
-        font-size: 10px;
+        font-size: 10px !important;
+        margin-top: 5px;
     }
     .login14px a {
         top: -4px;
         position: relative;
     }
-}
 
+    .checkbox_modal {
+        margin-left: 19px !important;
+    }
+    .checkbox label, .radio label {
+        min-height: 20px;
+        padding-left: 10px;
+    }
+    .login14px label, .login14px a {
+        font-size: 12px;
+        float: right;
+    }
+    #topnav UL .submenu-item.on a{
+        padding: 1px 10px;
+    }
 
-@media only screen and (max-width: 990px) {
-    #topnav UL li.logo a {
+  #topnav UL li.logo a {
         width: 100% !important;
         height: 100%;
     }
     #topnav.wrapper li{
         display: block;
     }
+    .logo a:hover{
+        border-bottom: none !important;
+    }
+    .logo:hover {
+        border-bottom: none !important;
+    }
+
 }
