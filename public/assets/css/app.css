@@ -4712,6 +4712,7 @@ html body #network .choose-net {
          vertical-align: middle;
     }
     #topnav.wrapper UL li:hover {
+        border-bottom: 1px solid #080ef8;
         color: #fff;
     }
     #topnav.wrapper li a{
@@ -4720,6 +4721,7 @@ html body #network .choose-net {
 
     #topnav.wrapper li a:hover{
         display: block !important;
+        border-bottom: 1px solid #080ef8;
     }
     .nav>li>a{
         padding: 1px 15px;

@@ -117,17 +117,17 @@
     </div>
 </nav>
 @endif 
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
+<!--<nav class="navbar navbar-inverse navbar-fixed-bottom">
   <div class="container">
 
     <div class="hidden-sm hidden-xs" id="navbar">
       <ul class="nav navbar-nav">
         <li id="menu_home"><a href="/"></a></li>
-      
+
         @if(\Sentry::check())
           <li><a style="color: #f2ec3f" href="/socialtasks" title="Social Media Tasks">Requests</a>
           </li>
-          
+
            <li>
          	 <a class="internal" style="color: #27ecf8" href="/#tags" title="Tags">Tags</a>
        	 </li>
@@ -138,8 +138,8 @@
           <li><a style="color: #fc00ef" href="/about" title="About">About</a>
           </li>
         @endif
-        
-        
+
+
         <li id="menu_search"><a href="#" class="RunSearch" title="Search">&nbsp;</a></li>
         @if(!\Sentry::check())
         <li>
@@ -162,7 +162,7 @@
             <a style="color: #f2f126" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal" href="#" title="Sign up">Sign up</a>
           </li>
         @endif
-        
+
       </ul>
     </div>
 
@@ -194,7 +194,7 @@
 
   </div>
 </nav>
-
+-->
 @if(!\Sentry::check())
   @include('layouts.partials.modals.login')
   @include('layouts.partials.modals.signup')
