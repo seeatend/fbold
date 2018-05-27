@@ -4726,6 +4726,20 @@ html body #network .choose-net {
     .nav>li>a{
         padding: 1px 15px;
     }
+
+    .checkbox{
+        padding-left: 0px;
+    }
+    .checkbox label, .radio label {
+        padding-left: 6px;
+    }
+    .login14px label, .login14px a {
+        font-size: 10px;
+    }
+    .login14px a {
+        top: -4px;
+        position: relative;
+    }
 }
 
 
