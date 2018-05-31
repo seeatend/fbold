@@ -1,5 +1,5 @@
 @include ('layouts.partials.marketing.header')
-<div id="wrapper">
+<div id="wrapper" style="position: relative;">
 <!--    /*====================== banner =============================*/-->
 <section class="banner space">
 <div class="banner-background"></div>

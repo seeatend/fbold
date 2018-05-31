@@ -1,4 +1,4 @@
-<header class="main-header">
+<header class="main-header sticky" style="background: #fff">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
@@ -14,7 +14,7 @@
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right" style="width: auto !important;">
+                            <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
                                 <li><a href="/#cat">Categories </a></li>
                                 <li><a href="#" id="home-search-input" class="home-search-input RunSearch">Search</a></li>
                                 @if (!\Sentry::check())
@@ -25,9 +25,15 @@
                                     <li>
                                         <a href="/socialtasks" title="requests">Requests</a>
                                     </li>
-                                    <li>
-                                        <a href="{{ route('auth_logout') }}" title="Log out">Log out</a>
+                                    <li class="right marketing-nav-item" style="height: auto;">
+                                        <a href="#" class="submenu" onclick="show_menu();"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}}</span></span></a>
+                                        <span class="submenu-item menudown" style="display:none">
+                                         <a class="marketing-nav-item" href="{{ route('auth_logout') }}" title="Log out"><span class="vcenter"><span class="valign">Log out</span></span></a>
+                                        </span>
+
                                     </li>
+
+
                                 @endif
                             </ul>
                         </div>

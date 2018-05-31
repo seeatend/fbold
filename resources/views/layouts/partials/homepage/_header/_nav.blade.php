@@ -23,7 +23,7 @@
   }
 </style>
 @if(\Sentry::check())
-<nav id="topnav" class="wrapper">
+<nav id="topnav" class="wrapper sticky">
     <div class="navbar-header visible-xs">
         <button type="button" onclick="showMenu()" id="nav-hamburger" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="19" viewBox="0 0 23 19"><g fill="none"><g fill="#555"><rect y="16" width="23" height="3" rx="1.5"></rect><rect width="23" height="3" rx="1.5"></rect><rect y="8" width="23" height="3" rx="1.5"></rect></g></g></svg>
@@ -33,7 +33,7 @@
         </ul>
     </div>
 	<div class="nav-content hidden-xs ">
-		<ul>	
+		<ul>
 			<li class="logo" style="width:160px;"><a href="/"></a></li>
 
 	<li class="right marketing-nav-item hidden-sm">
@@ -41,22 +41,22 @@
 			<span class="submenu-item">
 					 <a class="marketing-nav-item" href="{{ route('auth_logout') }}" title="Log out"><span class="vcenter"><span class="valign">Log out</span></span></a>
 				</span>
-			
+
 			</li>
 				<li class="right marketing-nav-item hidden-sm"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
 			<li  class="hidden-sm"><a class="marketing-nav-item" href="/socialtasks"><span class="vcenter"><span class="valign">Requests</span></span></a></li>
-		
-			
-			
-		
+
+
+
+
 			{{-- <li class="right"><a href="#" class="nav-profile"><span class="vcenter"><span class="profile-avatar" style="background: url(@if(Sentry::getUser()->avatar) '{{Sentry::getUser()->avatar}}'   @else '/assets/images/homepage/default-user.png' @endif) center no-repeat; border-radius: 200px; width: 55px; height: 55px; float: right; background-size: cover;"></span></span></a></li> --}}
-		
+
 			<li class="right hidden-sm"><a href="#" class="marketing-nav-item RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
 			<li class="hidden-sm"><a href="/#cat"  class="marketing-nav-item internal"><span class="vcenter"><span class="valign" style="">Categories</span></span></a></li>
-		</ul>	
+		</ul>
 	</div>
     <div class="collapse navbar-collapse" style="display: none" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right visible-xs" style="background: #eee;height: auto;">
+        <ul class="nav navbar-nav navbar-right visible-xs" style="margin-right: -30px;background: #eee;height: auto;">
 
 
 
@@ -116,7 +116,7 @@
         </ul>
     </div>
 </nav>
-@endif 
+@endif
 <!--<nav class="navbar navbar-inverse navbar-fixed-bottom">
   <div class="container">
 

@@ -98,6 +98,9 @@
     .main-header .navbar-default .navbar-nav>li>a {
         padding: 8px 15px
     }
+    .main-header .navbar-default .navbar-nav>li>div {
+        padding: 8px 15px
+    }
     .navbar-header {
         height: 61px
     }
@@ -131,7 +134,8 @@
         padding: 0
     }
     .main-header .navbar-nav {
-        margin: 0 -15px
+        margin: 0px;
+        width: 100% !important;
     }
     .main-header .navbar-default .navbar-nav>li>a {
         color: #5e5e5e;

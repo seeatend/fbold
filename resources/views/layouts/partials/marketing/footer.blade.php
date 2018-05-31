@@ -84,57 +84,19 @@
     <script type="text/javascript" src="{{asset('assets/js/site.js')}}?v=1.4"></script>
     <script type="text/javascript" src="{{asset('assets/js/plugins.js')}}"></script>
   <script type="text/javascript" src="{{asset('assets/js/main.js')}}"></script>
-    <!-- begin olark code -->
-    <script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
-    /* custom configuration goes here (www.olark.com/documentation) */
-    olark.identify('9892-959-10-1592');</script>
-    <!-- end olark code -->
-    <script type="text/javascript">
-        var BASE_PATH = "<?php echo Config::get('otherconstants.BASE_URL'); ?>";
-        $(function () {
-            $.ajaxSetup({
-                headers: {
-                    'X-CSRF-Token': $('meta[name="_token"]').attr('content')
-                }
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        var MTUserId='2583f09c-7450-45ea-bd8b-ded4a8e1233f';
-        var MTFontIds = new Array();
-
-        MTFontIds.push("1459684"); // Neue Helvetica® W04 35 Thin 
-        MTFontIds.push("1459692"); // Neue Helvetica® W04 55 Roman 
-        (function() {
-            var mtTracking = document.createElement('script');
-            mtTracking.type='text/javascript';
-            mtTracking.async='true';
-            mtTracking.src='/assets/mtiFontTrackingCode.js';
-
-            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(mtTracking);
-        })();
-    </script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        function show_menu(){
+            $('.menudown').toggle();
+        }
 
-        ga('create', 'UA-61954822-1', 'auto');
-        ga('send', 'pageview');
     </script>
+
     <script>
         $(".remove-alert").on('click', function () {
             $(".flash-errors").hide();
         });
     </script>
+
 </body>
 
 </html>
