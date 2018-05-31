@@ -4685,15 +4685,29 @@ html body #network .choose-net {
     width: 51px;
     height: 51px
 }
-
+.nar_bar{
+    height: 80px;
+}
 #wrapper {
     margin-bottom: 0px !important;
     padding: 0px !important
 }
-
+.buyer-faq-banner, #wrapper, .buyer-faq-banner{
+    margin-top: 80px;
+}
 @media only screen and (max-width: 990px) {
     #topnav UL li.logo a {
         width: 100%;
+    }
+    .buyer-faq-banner, #wrapper, .buyer-faq-banner{
+        margin-top: 67px;
+
+    }
+    .nar_bar{
+        height: auto;
+    }
+    #remember_me{
+        margin-left: -92px;
     }
     #topnav UL li.logo{
         margin-left: 0px;

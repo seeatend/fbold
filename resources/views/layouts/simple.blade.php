@@ -14,76 +14,106 @@
 <?php
 	$url = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
   	$current_url  = @( $_SERVER["HTTPS"] != 'on' ) ? 'http://'.$_SERVER["SERVER_NAME"] :  'https://'.$_SERVER["SERVER_NAME"];
-	if(isset($username)) { $current_url .= "/".$username; } else { $current_url .= $_SERVER["REQUEST_URI"]; }  
+	if(isset($username)) { $current_url .= "/".$username; } else { $current_url .= $_SERVER["REQUEST_URI"]; }
 ?>
-	<head>
-   	<meta charset="utf-8">
-   	<meta name="description" content="@if (isset($description)){{ $description }} @endif"/>
-   	<meta name="keywords" content="@if (isset($keywords)){{ $keywords }} @endif"/>
-   	<meta property="og:url" content="<?php echo $current_url; ?>"/>
-   	<meta property="og:description" content="@if (isset($description)){{ $description }} @endif"/>
 
-   	<title>
-      	@if (isset($title)){{ $title }}   |
-      	@elseif (isset($username))
-       		{{ $username }}   |
-      	@endif
-      	@yield('pageTitle', 'Followback')</title>
-    	<meta property="og:title" content=" @if (isset($title)){{ $title }}   | @elseif (isset($username)) {{ $username }}   | @endif @yield('pageTitle', 'Followback')"/>
-    	<meta property="og:title" content="@yield('pageTitle', 'Your Social Media Task Provider  |  Followback')"/>
-    	<meta property="og:image" content="http://www.followback.com/assets/images/favicon.png">
-    	<meta property="og:image" content="@if (isset($avatar)){{ 'http://www.followback.com'.$avatar }} @else {{ 'http://www.followback.com/assets/images/homepage/homepage.jpg'  }} @endif ">
-		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
-		<meta name="robots" content="index, follow"/>
- 
-		{{asset_stylesheet('plugins/colorbox/colorbox.css')}}
-		{{asset_stylesheet('plugins/toastr/toastr.min.css')}}
-		{{asset_stylesheet('style/video-js.css')}}
-		{{asset_stylesheet('style/videojs-sublime-skin.css')}}
+  <head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  {{-- <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
+	  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	  {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> --}}
+	  <meta charset="utf-8">
+	  <meta name="description" content="@if (isset($description)){{ $description }} @endif"/>
+	  <meta name="keywords" content="@if (isset($keywords)){{ $keywords }} @endif"/>
+	  <meta property="og:url" content="<?php echo $current_url; ?>"/>
+	  <meta property="og:description" content="@if (isset($description)){{ $description }} @endif"/>
 
-		<link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="shortcut icon" sizes="32x32" href="{{ asset('favicon.ico') }}">
-		<link rel="apple-touch-icon" href="/favicon.png"/>
+	  <title>
+		  @if (isset($title)){{ $title }}   |
+		  @elseif (isset($username))
+			  {{ $username }}   |
+		  @endif
+		  @yield('pageTitle', 'Followback')</title>
+	  <meta property="og:title" content=" @if (isset($title)){{ $title }}   | @elseif (isset($username)) {{ $username }}   | @endif @yield('pageTitle', 'Followback')"/>
+	  <meta property="og:title" content="@yield('pageTitle', 'Your Social Media Task Provider  |  Followback')"/>
+	  <meta property="og:image" content="http://www.followback.com/assets/images/favicon.png">
+	  <meta property="og:image" content="@if (isset($avatar)){{ 'http://www.followback.com'.$avatar }} @else {{ 'http://www.followback.com/assets/images/homepage/homepage.jpg'  }} @endif ">
+	  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+	  <meta name="robots" content="index, follow"/>
+	  <!-- Bootstrap -->
+	  <link href="/marketing/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	  <link href="/marketing/fonts/stylesheet.css" rel="stylesheet">
+	  <link href="/marketing/css/style.css?v=1.3" rel="stylesheet">
+	  <link href="/marketing/css/responsive.css?v=1.2" rel="stylesheet">
+	  <link href="/marketing/css/auth-modal-hacks.css" rel="stylesheet">
 
-		{{asset_stylesheet('style/select2.css')}}
-		{{asset_stylesheet('style/everslider.css')}}
-		{{asset_stylesheet('style/jquery.switchButton.css')}}
-		{{asset_stylesheet('style/jquery.jscrollpane.css')}}
-		{{asset_stylesheet('style/jquery.jscrollpane.lozenge.css')}}
-		{{asset_stylesheet('style/confirm-dialog.css')}}
+	  <link href="/marketing/css/jquery.mb.vimeo_player.min.css" rel="stylesheet">
+	  <link href="/marketing/css/owl.carousel.min.css" rel="stylesheet">
+	  <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	  <link href="{{asset('assets/css/app.css')}}" rel="stylesheet" type="text/css">
+	  <style>
+		  body{
+			  font-family: "CircularStd" !important;
+			  letter-spacing: 0em !important;
+		  }
+		  .main-header .navbar-default .navbar-nav>li>div {
+			  color: #6b6b6b;
+			  font-size: 14px;
+			  letter-spacing: .01em;
+			  padding: 22.5px 0px;
+			  border-bottom: 2px solid transparent;
+		  }
+		  .dropdown-menu{
+			  position:fixed;
+			  top:77px;
+		  }
+		  #navbar, .navbar-nav {
+			  width: auto !important;
+		  }
+		  .sticky {
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			  z-index: 100;
+			  border: 1px solid lightgray;
+		  }
+		  .widget h3{
+			  font-family: "CircularStd" !important;
 
-		{{asset_stylesheet('bootstrap.min.css')}}
-		{{asset_stylesheet('bootstrap-theme.min.css')}}
-		<link href="/assets/css/bootstrap-toggle.min.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-		{{asset_stylesheet('awesome-bootstrap-checkbox.css')}}
-		{{asset_stylesheet('app.css')}}
+			  font-weight: 500 !important;
+		  }
 
-		<script src="/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-    	@yield('css_include')
-    	@yield('css_inline')
-	</head>
+	  </style>
+  </head>
 
-  <body id="pagewrapper" class="@if(isset($body_class)){{ $body_class }}@endif @yield('body_class')">
-	<div class="sticky-header">
-		<a href="/" title="Followback"></a>
-	</div>
-	
-    <div class="user-messages">
-      @include('layouts.partials.frontend._messages')
-    </div>
+  <body style="padding: 0 !important;">
+  @include('partials/new-search-container')
+  @if(!\Sentry::check())
+	  @include('layouts.partials.modals.login')
+	  @include('layouts.partials.modals.signup')
+  @endif
+  <!--   /*====================== Header =============================*/-->
+  @include('layouts.nav2')
+
+  <div class="user-messages">
+	  @include('layouts.partials.frontend._messages')
+  </div>
+
     <div class="home-loader"></div>
-    @include('partials/new-search-container')
 
     <div id="preloader5" style="display:none;"></div>
-
     <div id="wrapper">
     <div class="sticky-clearfix"></div>
+
       @yield('content')
     </div>
-    @include('layouts.partials.homepage._header._nav')
+    {{--@include('layouts.partials.homepage._header._nav')--}}
       <!-- Twitter -->
     <a href="https://twitter.com/followback" title="Followback Twitter"></a>
 
@@ -170,6 +200,11 @@
 	function showMenu(){
 		    $('#bs-example-navbar-collapse-1').toggle('slow');
 	}
+        function show_menu(){
+            $('.menudown').toggle();
+        }
+
+
 	</script> 
     <!-- begin olark code -->
     <script type="text/javascript" async> ;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");

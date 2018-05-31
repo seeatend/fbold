@@ -1,6 +1,6 @@
 @include ('layouts.partials.marketing.header')
 <!--    /*====================== buyer-faq-banner =============================*/-->
-<div class="buyer-faq-banner" style="margin-top:80px;background-image: url(/marketing/images/Become_A_Seller_Page.jpg);background-position: center">
+<div class="buyer-faq-banner" style="background-image: url(/marketing/images/Become_A_Seller_Page.jpg);background-position: center">
     <div class="overlay space" style="background-color: transparent;">
         <div class="container">
             <div class="row">

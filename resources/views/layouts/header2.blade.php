@@ -23,55 +23,55 @@
     <link href="/marketing/css/jquery.mb.vimeo_player.min.css" rel="stylesheet">
     <link href="/marketing/css/owl.carousel.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="{{asset('assets/css/app.css')}}" rel="stylesheet" type="text/css">
-<style>
-    body{
-        font-family: "CircularStd" !important;
-        letter-spacing: 0em !important;
-    }
-    .main-header .navbar-default .navbar-nav>li>div {
-        color: #6b6b6b;
-        font-size: 14px;
-        letter-spacing: .01em;
-        padding: 22.5px 0px;
-        border-bottom: 2px solid transparent;
-    }
-    .dropdown-menu{
-        position:fixed;
-        top:77px;
-    }
-    #navbar, .navbar-nav {
-        width: auto !important;
-    }
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 100;
-        border: 1px solid lightgray;
-    }
-    .widget h3{
-        font-family: "CircularStd" !important;
+    <style>
+        body{
+            font-family: "CircularStd" !important;
+            letter-spacing: 0em !important;
+        }
+        .main-header .navbar-default .navbar-nav>li>div {
+            color: #6b6b6b;
+            font-size: 14px;
+            letter-spacing: .01em;
+            padding: 22.5px 0px;
+            border-bottom: 2px solid transparent;
+        }
+        .dropdown-menu{
+            position:fixed;
+            top:77px;
+        }
+        #navbar, .navbar-nav {
+            width: auto !important;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            border: 1px solid lightgray;
+        }
+        .widget h3{
+            font-family: "CircularStd" !important;
 
-        font-weight: 500 !important;
-    }
+            font-weight: 500 !important;
+        }
 
 
-</style>
+    </style>
 </head>
 
 <body style="padding: 0 !important;">
 @include('partials/new-search-container')
-    @if(!\Sentry::check())
-        @include('layouts.partials.modals.login')
-        @include('layouts.partials.modals.signup')
-    @endif
-    <!--   /*====================== Header =============================*/-->
-    @include('layouts.partials.marketing.navbar')
+@if(!\Sentry::check())
+    @include('layouts.partials.modals.login')
+    @include('layouts.partials.modals.signup')
+@endif
+<!--   /*====================== Header =============================*/-->
+@include('layouts.partials.marketing.navbar')
 
-    <div class="user-messages">
-        @include('layouts.partials.frontend._messages')
-    </div>
+<div class="user-messages">
+    @include('layouts.partials.frontend._messages')
+</div>
