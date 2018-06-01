@@ -19,7 +19,7 @@
 
                                 @if (!\Sentry::check())
 
-                                    <li class="hidden-sm"><a href="/#cat"  class="internal "><span class="vcenter"><span class="valign" style="line-height: 65px; font-family: Arial; font-weight: 900; font-size: 21px;">Categories</span></span></a></li>
+                                    <li class="hidden-sm"><a href="/#cat"  class="marketing-nav-item internal "><span class="vcenter"><span class="valign">Categories</span></span></a></li>
                                     <li class="right hidden-sm"><a href="#" class="RunSearch"><span class="vcenter"><span class="valign">Search</span></span></a></li>
                                     <li class="hidden-sm"><a href="/#how_it_works"  class="internal"><span class="vcenter"><span class="valign">Help</span></span></a></li>
                                     <li class="right hidden-sm"><a href="/#" data-toggle="modal" data-backdrop="true" data-target="#SignUpModal"><span class="vcenter"><span class="valign">Sign&nbsp;up</span></span></a></li>
@@ -31,10 +31,15 @@
                                     <li><a class="marketing-nav-item" href="/socialtasks"><span class="vcenter"><span class="valign">Requests</span></span></a></li>
 
                                     <li class="right marketing-nav-item"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
-                                    <li class="right marketing-nav-item" style="height: auto;">
+                                    <li class="right marketing-nav-item hidden-xs" style="height: auto;">
                                         <a href="#" class="submenu" onclick="show_menu();"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}} <i class="fa fa-angle-down"></i></span></span></a>
 
                                     </li>
+                                    <li class="right marketing-nav-item visible-xs" style="height: auto;">
+                                        <a href="#" class="submenu" onclick="show_menu_mobile();"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}} <i class="fa fa-angle-down"></i></span></span></a>
+                                    </li>
+                                    <li class="logout_i" style="display: none;"><a class="marketing-nav-item  visible-xs"  href="{{ route('auth_logout') }}"><span class="vcenter"><span class="valign">Log out</span></span></a></li>
+
                                 @endif
                             </ul>
                         </div>
@@ -48,7 +53,7 @@
 </header>
 <span class="submenu-item menudown hidden-xs" style="width: 100px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     float: right;
     z-index: 10;
     left: 91%;

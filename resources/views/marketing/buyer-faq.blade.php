@@ -34,6 +34,11 @@
                             <div class="panel-body">Followback is a platform that helps people, brands, and business promote their products, services, and talents on social media without the need for a marketing, advertising, or PR agency.</div>
                         </div>
                     </div>
+
+                    <div class="panel panel-default">
+
+                    </div>
+
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
@@ -41,6 +46,7 @@
   My brand or business already has a social media following. How can Followback benefit me?<i class="fas fa-angle-down"></i></a>
                             </h4>
                         </div>
+
                         <div id="collapse2" class="panel-collapse collapse">
                             <div class="panel-body">Even if you have a following on social media, you can always find someone with a larger following to help you promote your brand, product, or service. You can also use Followback’s community to help you promote your business, brand, or product to an untapped demographic. We can help take your social media marketing to the next level!</div>
                         </div>

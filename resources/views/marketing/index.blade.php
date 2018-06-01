@@ -242,15 +242,15 @@ has been sent directly to the person.</p>
     <div class="row" style="margin: 0;">
         <div class="subcategories-scroller-slider owl-carousel clearfix">
             <div class="col-xs-12 item">
-                <a href="/sort/song" class="img">
+                <a onclick="searchModal('video')" #href="/sort/song" class="img">
                     <!--                            <img src="images/sub-1.jpg" alt="">-->
                     <div class="text">
-                        <h3>Song</h3>
+                        <h3>Music video</h3>
                     </div>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/fashion" class="img">
+                <a onclick="searchModal('fashion')" #href="/sort/fashion" class="img">
                     <!--                            <img src="images/sub-2.jpg" alt="">-->
                     <div class="text">
                         <h3>Clothing line</h3>
@@ -258,7 +258,7 @@ has been sent directly to the person.</p>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/profile" class="img">
+                <a onclick="searchModal('profile')" #href="/sort/profile" class="img">
                     <!--                            <img src="images/sub-3.jpg" alt="">-->
                     <div class="text">
                         <h3>Profile</h3>
@@ -266,7 +266,7 @@ has been sent directly to the person.</p>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/health" class="img">
+                <a onclick="searchModal('health')" #href="/sort/health" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
                         <h3>Health/Beauty Product</h3>
@@ -274,7 +274,7 @@ has been sent directly to the person.</p>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/app" class="img">
+                <a onclick="searchModal('app')" #href="/sort/app" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
                         <h3>App</h3>
@@ -282,7 +282,7 @@ has been sent directly to the person.</p>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/store" class="img">
+                <a onclick="searchModal('store')" #href="/sort/store" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
                         <h3>Store</h3>
@@ -290,7 +290,7 @@ has been sent directly to the person.</p>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/website" class="img">
+                <a onclick="searchModal('website')" #href="/sort/website" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
                         <h3>Website</h3>
@@ -298,7 +298,7 @@ has been sent directly to the person.</p>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/restaurant" class="img">
+                <a onclick="searchModal('restaurant')" #href="/sort/restaurant" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
                         <h3>Restaurant</h3>
@@ -306,7 +306,7 @@ has been sent directly to the person.</p>
                 </a>
             </div>
             <div class="col-xs-12 item">
-                <a href="/sort/event" class="img">
+                <a onclick="searchModal('event')" #href="/sort/event" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
                     <div class="text">
                         <h3>Event</h3>

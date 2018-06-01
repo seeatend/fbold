@@ -30,7 +30,7 @@
           Trending Searches
         </h2>
         
-        <ul style="padding-left: 0px;list-style: none; display: block; text-align: center; margin: 20px auto; line-height: 2.15em;">
+        <ul class="normal" style="padding-left: 0px;list-style: none; display: block; text-align: center; margin: 20px auto; line-height: 2.15em;">
           <li><a href="/sort/musician">#musician</a></li>
           <li><a href="/NickiMinaj">Nicki Minaj</a></li>
           <li><a href="/sort/tv">#tv</a></li>
@@ -43,6 +43,17 @@
           <li><a href="/DJKhaled">DJ Khaled</a></li>
           <li><a href="/followers/1-5M">1-5 Millions+ Followers</a></li>
         </ul>
+
+          <ul class="default" style="padding-left: 0px;list-style: none; display: block; text-align: center; margin: 20px auto; line-height: 2.15em;">
+              <li><a href="/sort/musician">Musicians</a></li>
+              <li class="/sort/radio"><a href="/NickiMinaj">Radio host</a></li>
+              <li class="/sort/tv"><a href="/sort/tv">Tv persoanlities</a></li>
+              <li class="/sort/dj"><a href="/KhloeKardashian">djs</a></li>
+              <li><a href="/sort/model">models</a></li>
+              <li class="/sort/athlete"><a href="/Lala">athletes</a></li>
+
+
+          </ul>
       </div>
     </div>
   </div>

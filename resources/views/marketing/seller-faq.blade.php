@@ -35,6 +35,9 @@
                         </div>
                     </div>
                     <div class="panel panel-default">
+
+                    </div>
+                    <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" aria-expanded="false" href="#collapse2">
@@ -91,6 +94,7 @@
                             <div class="panel-body">Create an account by clicking here. All you need is an email address to get started and the process only takes a few minutes.</div>
                         </div>
                     </div>
+
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">

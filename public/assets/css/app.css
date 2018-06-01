@@ -1153,7 +1153,7 @@ select:focus {
 #socialtask .profile_verified {
     display: inline-block;
     position: relative;
-    background: url('/assets/images/icon-verified.png') no-repeat right center;
+    background: url('/assets/images/icon04.svg') no-repeat right center;
     width: 24px;
     height: 24px;
     top: 0px;
@@ -1181,7 +1181,7 @@ select:focus {
 
 #socialtask .profile-name span .profile_verified {
     position: absolute;
-    right: -25px;
+    right: -21px;
     top: 5px
 }
 
@@ -3035,7 +3035,7 @@ footer {
         background-size: 200px !important
     }
     .profile_verified {
-        background: url('/assets/images/icon-verified.png') no-repeat right center !important;
+        background: url('/assets/images/icon04.svg') no-repeat right center !important;
         background-size: 20px 20px !important;
         width: 20px;
         height: 20px;
@@ -4784,5 +4784,7 @@ html body #network .choose-net {
     .logo:hover {
         border-bottom: none !important;
     }
-
+}
+.navbar-header{
+    cursor: pointer;
 }

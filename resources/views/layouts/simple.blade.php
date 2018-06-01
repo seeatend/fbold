@@ -42,8 +42,15 @@
 	  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
 	  <meta name="robots" content="index, follow"/>
 	  <!-- Bootstrap -->
+	  {{asset_stylesheet('plugins/colorbox/colorbox.css')}}
+	  {{asset_stylesheet('plugins/toastr/toastr.min.css')}}
+	  {{asset_stylesheet('style/video-js.css')}}
+	  {{asset_stylesheet('style/videojs-sublime-skin.css')}}
+
+	  <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+
 	  <link href="/marketing/css/bootstrap.min.css" rel="stylesheet">
-	  <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	  {{--<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">--}}
 	  <link href="/marketing/fonts/stylesheet.css" rel="stylesheet">
 	  <link href="/marketing/css/style.css?v=1.3" rel="stylesheet">
 	  <link href="/marketing/css/responsive.css?v=1.2" rel="stylesheet">

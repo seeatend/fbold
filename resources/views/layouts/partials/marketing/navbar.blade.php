@@ -25,9 +25,16 @@
                                     <li>
                                         <a href="/socialtasks" title="requests">Requests</a>
                                     </li>
-                                    <li class="right marketing-nav-item" style="height: auto;">
+                                    <li class="right marketing-nav-item"><a href="{{ route('profile_followback_profile') }}"><span class="vcenter"><span class="valign">Settings</span></span></a></li>
+
+                                    <li class="right marketing-nav-item hidden-xs" style="height: auto;">
                                         <a href="#" class="submenu" onclick="show_menu();"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}} <i class="fa fa-angle-down"></i></span></span></a>
                                     </li>
+
+                                    <li class="right marketing-nav-item visible-xs" style="height: auto;">
+                                        <a href="#" class="submenu" onclick="show_menu_mobile();"><span class="vcenter"><span class="valign">{{Sentry::getUser()->username}} <i class="fa fa-angle-down"></i></span></span></a>
+                                    </li>
+                                    <li class="logout_i" style="display: none;"><a class="marketing-nav-item visible-xs" href="{{ route('auth_logout') }}"><span class="vcenter"><span class="valign">Log out</span></span></a></li>
 
 
                                 @endif
@@ -43,7 +50,7 @@
 </header>
 <span class="submenu-item menudown hidden-xs" style="width: 100px;
     height: 50px;
-    position: absolute;
+    position: fixed;
     float: right;
     z-index: 10;
     left: 91%;

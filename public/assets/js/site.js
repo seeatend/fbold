@@ -26671,13 +26671,19 @@ jQuery(document).ready(function () {
 
     $('#home-search-input, .home-search-input').focus(function () {
     	 $(this).val(" ");
+        $('.default').hide();
+        $('.normal').show();
         $('#search-container').fadeIn();
         $("#search-input").focus();
          $(".wrapper,#wrapper").hide();
         $(".main-footer").hide();
+
          $gate == "open";
     }).click(function(){
     	  $(this).val(" ");
+        $('.default').hide();
+        $('.normal').show();
+
     	  $gate = "close";
         $('#search-container').fadeIn();
         $("#search-input").focus();

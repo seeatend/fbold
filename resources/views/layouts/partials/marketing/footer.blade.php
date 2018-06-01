@@ -62,16 +62,16 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12 text-right footer-icon">
-                        <a href="http://instagram.com/followback_com"><i class="fab fa-instagram"></i></a>
-                        <a href="http://twitter.com/followback"><i class="fab fa-twitter"></i></a>
-                        <a href="http://snapchat.com/add/followback.com"><i class="fab fa-snapchat-ghost"></i></a>
-                        <a href="http://linkedin.com/company/followback"><i class="fab fa-linkedin"></i></a>
-                        <a href="http://giphy.com/followback"><i class="far fa-file"></i></a>
-                        <a href="http://medium.com/@followback"><i class="fab fa-medium"></i></a>
-                        <a href="https://dribbble.com/Followback"><i class="fab fa-dribbble"></i></a>
-                        <a href="https://www.uplabs.com/followback"><img src="images/up.png" alt=""></a>
-                        <a href="https://www.producthunt.com/@followback"><img src="images/p.png" alt=""></a>
-                        <a href="https://www.buzzfeed.com/followback"><img src="images/buz.png" alt=""></a>
+                        <a target="_blank" href="http://instagram.com/followback_com"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="http://twitter.com/followback"><i class="fab fa-twitter"></i></a>
+                        <a target="_blank" href="http://snapchat.com/add/followback.com"><i class="fab fa-snapchat-ghost"></i></a>
+                        <a target="_blank" href="http://linkedin.com/company/followback"><i class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="http://giphy.com/followback"><i class="far fa-file"></i></a>
+                        <a target="_blank" href="http://medium.com/@followback"><i class="fab fa-medium"></i></a>
+                        <a target="_blank" href="https://dribbble.com/Followback"><i class="fab fa-dribbble"></i></a>
+                        <a target="_blank" href="https://www.uplabs.com/followback"><img src="images/up.png" alt=""></a>
+                        <a  target="_blank"href="https://www.producthunt.com/@followback"><img src="images/p.png" alt=""></a>
+                        <a target="_blank" href="https://www.buzzfeed.com/followback"><img src="images/buz.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,33 @@
         function show_menu(){
             $('.menudown').toggle();
         }
+        function show_menu_mobile(){
+            $('.logout_i').toggle();
+        }
 
+        function searchModal(type){
+                $(this).val(" ");
+                $('#search-container').fadeIn();
+                $("#search-input").focus();
+                $(".wrapper,#wrapper").hide();
+                $(".main-footer").hide();
+
+                    $('.default').show();
+
+                    $('.normal').hide();
+                if(type === "video"){
+                    $('.video').hide();
+                }else{
+                    $('.video').show();
+                }
+            if(type === "health"){
+                $('.health').hide();
+            }else{
+                $('.health').show();
+            }
+
+
+        }
     </script>
 
     <script>
