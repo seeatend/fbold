@@ -50,7 +50,7 @@
             <li class="health"><a href="/sort/radio">Radio host</a></li>
             <li class="video"><a href="/sort/tv">Tv persoanlities</a></li>
             <li class="video"><a href="/sort/dj">djs</a></li>
-            <li><a href="health">models</a></li>
+            <li class="health"><a href="/sort/model">models</a></li>
             <li><a href="/sort/athlete">athletes</a></li>
 
         </ul>
