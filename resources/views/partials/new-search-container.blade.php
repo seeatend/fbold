@@ -47,11 +47,11 @@
 
         <ul class="default" style="padding-left: 0px;list-style: none; display: block; text-align: center; margin: 20px auto; line-height: 2.15em;">
             <li><a href="/sort/musician">Musicians</a></li>
-            <li class="/sort/radio"><a href="/NickiMinaj">Radio host</a></li>
-            <li class="/sort/tv"><a href="/sort/tv">Tv persoanlities</a></li>
-            <li class="/sort/dj"><a href="/KhloeKardashian">djs</a></li>
-            <li><a href="/sort/model">models</a></li>
-            <li class="/sort/athlete"><a href="/Lala">athletes</a></li>
+            <li class="health"><a href="/sort/radio">Radio host</a></li>
+            <li class="video"><a href="/sort/tv">Tv persoanlities</a></li>
+            <li class="video"><a href="/sort/dj">djs</a></li>
+            <li><a href="health">models</a></li>
+            <li><a href="/sort/athlete">athletes</a></li>
 
         </ul>
 
