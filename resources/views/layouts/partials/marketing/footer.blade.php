@@ -44,7 +44,7 @@
                             <h3>Community</h3>
                             <ul class="list">
                                <li><a href="become-seller">Become a Monetizer </a></li>
-                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="http://blog.followback.com" target="_blank">Blog</a></li>
                             </ul>
                         </div>
                     </div>
