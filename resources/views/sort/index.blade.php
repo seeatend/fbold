@@ -1,6 +1,11 @@
 <?php
 
-$pageTitle = str_replace("-", " ", $users[0]->category);
+        if(isset($title)){
+            $pageTitle = $title;
+        }else{
+            $pageTitle = str_replace("-", " ", $users[0]->category);
+
+        }
 $keywords = "tweet,pin,like,post,comment,follow,social,back,social,task, share, musicians," . $pageTitle . "," . "popstars,artists,actors, social,task,djs,joutnalist,stars,celebs";
 
 if ($pageTitle == "actors actresses") {

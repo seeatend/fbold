@@ -54,6 +54,43 @@ class UserController extends BaseController {
         }
     }
 
+    public function getSortedCategory($type){
+        $sorting_category = [
+            'musician','radio','tv','dj','model','athlete'
+        ];
+
+        if($type == "video"){
+            unset($sorting_category[2]);
+            unset($sorting_category[3]);
+        }elseif ($type == "health"){
+            unset($sorting_category[1]);
+            unset($sorting_category[4]);
+        }
+
+        if ($sorting_category) {
+            $users = DB::table('users')->whereIn('category', $sorting_category)->orderBy(
+                'username',
+                'ASC'
+            )->get();
+        } else {
+            $users = DB::table('users')->orderBy(
+                'username',
+                'ASC'
+            )->paginate(20);
+        }
+
+
+        $empty = [];
+
+        if(!$users){
+            Flash::addSuccess('This tag does not have any results.');
+            return redirect()->route('index');
+        } else {
+            return view('sort.index')->with('users', $users)->with('title',$type);
+        }
+
+    }
+
     public function getFollowers($followers)
     {
         $users = DB::table('users_social_accounts')

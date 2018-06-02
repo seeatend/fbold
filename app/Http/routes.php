@@ -343,6 +343,14 @@ Route::get(
     )
 );
 
+Route::get(
+    'sort/category/{category_type}',
+    array(
+        'as' => 'sort',
+        'uses' => 'UserController@getSortedCategory'
+    )
+);
+
 /* FOLLOWERS */
 Route::get(
     'followers/{followers}',
