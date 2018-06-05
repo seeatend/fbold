@@ -1852,7 +1852,8 @@ body {
 .subcategories-scroller .item .img .text h3 {
     margin: 0;
     font-size: 22px;
-    font-weight: 700
+    font-family: "CircularStd" !important;
+    font-weight: 700 !important;
 }
 
 .subcategories-scroller .item .img:hover .text {

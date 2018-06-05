@@ -121,6 +121,7 @@
         $(".remove-alert").on('click', function () {
             $(".flash-errors").hide();
         });
+
     </script>
 
 </body>

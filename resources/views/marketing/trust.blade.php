@@ -69,7 +69,7 @@
                 </h2>
             </div>
             <div class="col-md-6 col-sm-5 text-right earth">
-                <img src="/marketing/images/earth.png" class="img-responsive" alt="">
+                <img src="/assets/images/icon05.svg" class="img-responsive" alt="">
             </div>
         </div>
     </div>

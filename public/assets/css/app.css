@@ -4716,7 +4716,10 @@ html body #network .choose-net {
         width: 75% !important;float:left;margin-left: -25px;
     }
     #nav-hamburger{
-        float: left;width: 20%;margin-top: 11px;
+        float: left;width: 20%;
+        margin-top: 14px;
+        margin-right: 0;
+        margin-left: -5px;
     }
     #topnav UL li {
          text-align: center !important;
