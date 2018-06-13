@@ -47,7 +47,10 @@
               \Sentry::getUser()->avatar :
               '/assets/images/homepage/default-user.png';
             ?>
-            <div id="bidUpload" class="profile-upload col-md-1 col-md-offset-1 text-center col-xs-12">
+           
+            <?php  $all_status = \Config::get('notificationconstants'); ?>
+
+             <div id="bidUpload" class="profile-upload col-md-3 text-center col-xs-12">
 
               <?php echo Form::open(
                 [
@@ -78,9 +81,8 @@
               <?php echo Form::close(); ?>
             </div>
 
-            <?php  $all_status = \Config::get('notificationconstants'); ?>
 
-            <div class="col-md-12">
+            <div class="col-md-9">
               <div id="settings_form">
 						<div class="row">							
 							{{-- Name --}}
@@ -376,11 +378,11 @@
                 <?php echo Form::open(['route' => ['do_reset_password']]); ?>
                 <div class="form-group">
                   <label for="password" style="margin-bottom: 0px;"  class="fieldlabel">Change Password</label>
-                  <input name="current_password" type="password" class="form-control" placeholder="Current Password">
+                  <input name="current_password" type="password" class="form-control" placeholder="Current Password"> 
                   <input name="password" type="password" class="form-control" placeholder="New Password">
 
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                       <input name="password_confirmation" type="password" class="form-control" placeholder="Re-type New Password">
                     </div>
                     <div class="col-md-4 row-nopaddingleft">
