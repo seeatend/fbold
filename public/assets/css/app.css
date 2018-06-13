@@ -4791,3 +4791,49 @@ html body #network .choose-net {
 .navbar-header{
     cursor: pointer;
 }
+     /*Softlaunch quickfix;*/
+.vision {
+        padding: 64px 0 !important;
+}
+.owl-carousel {
+    width: 75% !important;
+    z-index: 1 !important;
+    margin: 0 auto !important;
+    /*max-height: 500px;*/
+    overflow: hidden !important;
+}
+.service .service-wraper {
+    max-width: 963px !important;
+ }
+ .works .custom {
+ max-width: 962px !important;
+ }
+ .subcategories-scroller .item .img {
+ min-height: 190px !important;
+ }
+ .nav-tabs {
+    border: none !important;
+
+ }
+ #socialtask .profile-name, #socialtask .profile-social {
+   float: none!important; 
+    display: block!important;
+    text-align: left;
+ }
+ .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus, .nav>li>a:hover, .nav>li>a:focus {
+    color: #fff;
+    border: none;
+    background: #0201fa;
+}
+.nav-tabs li a {
+    border-right: none!important;
+}
+input {
+    border-radius: 6px !important;
+}
+button {
+    border-radius: 6px !important
+}
+.social-media-input input {
+    width: 100% !important;
+}
