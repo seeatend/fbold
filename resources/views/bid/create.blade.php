@@ -20,6 +20,7 @@
         <div class="row" id="profile_top_block">
           <div class="col-md-12">
             <div class="row">
+              <div class="col-md-3">
               <div id="profile_photo">
               	
               	 @if(isset($result['data']) && !empty($result['data']))
@@ -37,6 +38,8 @@
                 
                 	</span>
               </div>
+              </div>
+              <div class="col-md-9">
               <div id="profile_top_data">
                	<h1 class="profile-name">
                		<span>
@@ -74,6 +77,7 @@
 					  <?php }; ?>
 				
 	            </div>
+              </div>
             
             </div>
           </div>
