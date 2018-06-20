@@ -50,7 +50,7 @@
            
             <?php  $all_status = \Config::get('notificationconstants'); ?>
 
-             <div id="bidUpload" class="profile-upload col-md-3 text-center col-xs-12">
+             <div id="bidUpload" class="profile-upload col-md-2 text-center col-xs-12">
 
               <?php echo Form::open(
                 [
@@ -82,7 +82,7 @@
             </div>
 
 
-            <div class="col-md-9">
+            <div class="col-md-10">
               <div id="settings_form">
 						<div class="row">							
 							{{-- Name --}}
@@ -192,7 +192,7 @@
                 	<div class="clearfix" style="height: 10px;"></div>
                   <div class="row">
                     <div class="col-xs-6 col-sm-9 col-md-9">
-                      <label for="notifications" class="fieldlabel" style="margin-top: 5px;">Receive email notifications?&nbsp;<a href="#" class="info"><span>Receive notification on social media task requests.</span><ins class="fa fa-question-circle"></ins></a></label>
+                      <label for="notifications" class="fieldlabel" style="margin-top: 5px; font-weight: normal !important">Receive email notifications?&nbsp;<a href="#" class="info"><span>Receive notification on social media task requests.</span><ins class="fa fa-question-circle"></ins></a></label>
                     </div>
                     <div class="col-xs-4 col-xs-offset-2 col-md-offset-0 col-sm-offset-0 col-lg-offset-0 col-sm-3 col-md-3">
                       <input name="notifications" type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" data-style="followback" data-size="medium" @if($notifications_status == '0') checked @endif>
@@ -223,7 +223,7 @@
                   		<div class="clearfix"></div>
                   		<?php echo Form::close(); ?>
                		
-               		<label class="fieldlabel">Your total social media followers: <a href="#" class="info"><span class="right">This number should represent the total amount of followers you have on social media. Please be aware that lying about the amount of followers you have will get you banned from using our services.</span><ins class="fa fa-question-circle"></ins></a></label>
+               		<label class="fieldlabel">The total amount of followers you have combined on social media <a href="#" class="info"><span class="right">This number should represent the total amount of followers you have on social media. Please be aware that lying about the amount of followers you have will get you banned from using our services.</span><ins class="fa fa-question-circle"></ins></a></label>
                		 <?php echo Form::open(
                   		[
                     		'route' => 'do_update_reach',
@@ -382,7 +382,7 @@
                   <input name="password" type="password" class="form-control" placeholder="New Password">
 
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-8">
                       <input name="password_confirmation" type="password" class="form-control" placeholder="Re-type New Password">
                     </div>
                     <div class="col-md-4 row-nopaddingleft">
@@ -622,8 +622,8 @@
     }
 
     #bidUpload {
-      text-align: center;
-      right: -45px;
+      /* text-align: center;
+      right: -45px; */
     }
 
     .profile-pic {

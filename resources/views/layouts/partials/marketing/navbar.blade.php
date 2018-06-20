@@ -53,7 +53,7 @@
     position: fixed;
     float: right;
     z-index: 10;
-    left: 91%;
+    right: 0;
     background: #fff;
     text-align: center;
     display:none;

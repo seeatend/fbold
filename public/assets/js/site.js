@@ -26900,7 +26900,7 @@ $(document).ready(function (e) {
         var emailLen = $('.username-input').val().length;
         var w = $(".username-label").outerWidth(false) + 4;
         if (emailLen > 0) {
-            $(this).css('padding-left', w);
+            $(this).css('padding-left', '125px');
             $(".username-label").show();
         } else {
             $(".username-label").hide();

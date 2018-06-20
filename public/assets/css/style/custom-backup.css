@@ -98,7 +98,7 @@ img{
 .user-name a{
 	color: #000;
 	font-weight: bold;
-	font-family: helveticaUltra;
+	/* font-family: helveticaUltra; */
 	text-decoration: none;
 }
 .user-name a:focus, .user-name a:active{

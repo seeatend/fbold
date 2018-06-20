@@ -56,7 +56,7 @@ video {
 body {
   font-size: 16px;
   color: #555555;
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif; */
   position: relative;
   min-height: 100%;
 } 
@@ -116,7 +116,7 @@ h6{
   padding: 10px; 
   height: 40px !important;
   resize: none;
-  font-family: helveticaUltra;
+  /* font-family: helveticaUltra; */
   overflow: hidden;
   font-size: 15px;
   color: #fff;
@@ -142,7 +142,7 @@ img {
   max-width: 100%;
 }
 input, button, select, textarea {
-    font-family: 'Helvetica Neue', sans-serif;
+    /* font-family: 'Helvetica Neue', sans-serif; */
     font-size: inherit;
     line-height: inherit;
 }
@@ -570,7 +570,7 @@ a.navbar-brand {
   background-size: 70px 70px;*/
   text-align: center;
   font-weight: bold;
-  font-family: 'Helvetica Neue',sans-serif !important;
+  /* font-family: 'Helvetica Neue',sans-serif !important; */
   font-size: 13px;  
   
 }
@@ -894,21 +894,21 @@ a.navbar-brand {
 }
 .slider-container .input-append ::-webkit-input-placeholder {
   color: #a2a2a2;
-  font-family: helveticaRoman;
+  /* font-family: helveticaRoman; */
 }
 .slider-container .input-append :-moz-placeholder {
   /* Firefox 18- */
   color: #a2a2a2;
-  font-family: helveticaRoman;
+  /* font-family: helveticaRoman; */
 }
 .slider-container .input-append ::-moz-placeholder {
   /* Firefox 19+ */
   color: #a2a2a2;
-  font-family: helveticaRoman;
+  /* font-family: helveticaRoman; */
 }
 .slider-container .input-append :-ms-input-placeholder {
   color: #a2a2a2;
-  font-family: helveticaRoman;
+  /* font-family: helveticaRoman; */
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background: none !important;}
 .followback-form-top-margin {
@@ -1968,7 +1968,7 @@ footer .share-link a {
   vertical-align: middle;
   cursor: pointer;
   font-size: 12px;
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif; */
 }
 footer .share-link a:hover {
   color: #5e5e5e;
@@ -1996,7 +1996,7 @@ footer .footer-menus ul li a {
   padding: 4px 10px;
   font-size: 12px;
   color: #777;
-  font-family: 'Helvetica Neue', sans-serif;
+  /* font-family: 'Helvetica Neue', sans-serif; */
 }
 footer .footer-menus ul li a:hover {
   background: none repeat scroll 0 0 #f2f2f2;
@@ -4360,7 +4360,7 @@ footer .share-link a{padding:8px 10px 8px 0;}
 .connected{display: block; width: 100%; text-align: center !important; padding:10px 0 10px 0;}
 .connected-images{text-align:center; display: block; width:100%;}
 .popup-images img{width: 20px; height: 20px; margin-right:5px;}
-.remember, .login-remind-password{font-family: helveticaUltra; font-size: 12px; display:inline-block; color:#555; margin-right: 10px;margin-top: 20px;}
+.remember, .login-remind-password{ font-size: 12px; display:inline-block; color:#555; margin-right: 10px;margin-top: 20px;}
 .popup-button-section{display: block; width: 100%;}
 .login-remind-password a{color:#555;}
 .login-content{text-shadow:1px 1px #FFF;}
@@ -4876,7 +4876,7 @@ header#received #header-network .back-text{
 #select2-results-1 li .select2-result-label{
   padding: 7px;
   color: #777;
-  font-family: "Helvetica Neue",sans-serif;
+  /* font-family: "Helvetica Neue",sans-serif; */
 }
 #select2-results-1 li .select2-result-label:hover{
 
@@ -4908,7 +4908,7 @@ header#received #header-network .back-text{
   font-size: 16px;
   font-weight: 400;
   color: #000;
-  font-family: "Helvetica Neue",sans-serif;
+  /* font-family: "Helvetica Neue",sans-serif; */
 }
 .for-col .help-block{
   white-space: nowrap;

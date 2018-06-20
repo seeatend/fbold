@@ -50,9 +50,6 @@
                		</span>
                 	</h1>
                 	
-                	@if(isset($userSocial->about))
-               	<p class="profile-about">{{$userSocial->about}}</p>
-	            @endif
                 <?php if(isset($userSocial)){ ?>
                 <ul class="profile-social">
 						 
@@ -73,7 +70,10 @@
 						 @if($userSocial->youtube != "")<li><a target="_blank" href="https://youtube.com/{{$userSocial->youtube}}"><ins class="fa fa-youtube"></ins></a></li>@endif
 						 @if($userSocial->soundcloud != "")<li><a target="_blank" href="https://soundcloud.com/{{$userSocial->soundcloud}}"><ins class="fa fa-soundcloud"></ins></a></li>@endif
 						 @if($userSocial->web != "")<li><a target="_blank" href="{{$userSocial->web}}"><ins class="fa fa-link"></ins></a></li>@endif
-					 </ul>
+           </ul>
+           @if(isset($userSocial->about))
+              <p class="profile-about">{{$userSocial->about}}</p>
+            @endif
 					  <?php }; ?>
 				
 	            </div>

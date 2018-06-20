@@ -25,7 +25,7 @@
 	
 	<div class="columns" style="padding: 0 5px;">
 		
-	 		<h2 style="padding: 30px 0 5px; font-size: 20px; font-family: Helvetica; font-weight: 400;" class="text-center">
+	 		<h2 style="padding: 30px 0 5px; font-size: 20px; font-weight: 400;" class="text-center">
  	 			Trending Searches
  	 		</h2>
 
@@ -42,7 +42,13 @@
             <li><a href="/FloydMayweather">Floyd Mayweather</a></li>
             <li><a href="/followers/5-10M">5-10 Millions+ Followers</a></li>
             <li><a href="/DJKhaled">DJ Khaled</a></li>
-            <li><a href="/followers/1-5M">1-5 Millions+ Followers</a></li>
+						<li><a href="/followers/1-5K">1-5 Thousands+ Followers</a></li>
+						<li><a href="/followers/5-10K">5-10 Thousands+ Followers</a></li>
+						<li><a href="/followers/10-50K">10-50 Thousands+ Followers</a></li>
+						<li><a href="/followers/50-100K">50-100 Thousands+ Followers</a></li>
+						<li><a href="/followers/100K-500K">100-500 Thousands+ Followers</a></li>
+						<li><a href="/followers/500K-1M">500 Thousands - 1 Millions+ Followers</a></li>
+						<li><a href="/followers/1-5M">1-5 Millions+ Followers</a></li>
         </ul>
 
         <ul class="default" style="padding-left: 0px;list-style: none; display: block; text-align: center; margin: 20px auto; line-height: 2.15em;">

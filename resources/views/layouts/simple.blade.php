@@ -63,6 +63,7 @@
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	  <![endif]-->
 	  <link href="{{asset('assets/css/app.css')}}" rel="stylesheet" type="text/css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 	  <style>
 		  body{
 			  font-family: "CircularStd" !important;
@@ -108,7 +109,7 @@
   <!--   /*====================== Header =============================*/-->
   @include('layouts.nav2')
 
-  <div class="user-messages">
+  <div class="user-messages" style="margin-top:83px">
 	  @include('layouts.partials.frontend._messages')
   </div>
 

@@ -51,9 +51,10 @@ $description = "View all verified members categorized as " . $pageTitle . " on F
       <a class="profile-result <?php if( $verified != NULL ) { ?> verified <?php } ?>"  href="/{{ $username }}">
      		<span class="profile-container" style="position: relative;">
         	 	<span class="loader profile-avatar" style="background: url({{ $user->avatar }}) top center no-repeat;">
-            	<img src="/assets/images/profile-placeholder.png" class="img-circle" alt="{{ $username }}"><ins class="profile_verified" style="border-radius: 300px; left: 63px; top: 55px; float: left; width: 20px; height: 20px; position: absolute; z-index: 20;"></ins>	
+            	<img src="/assets/images/profile-placeholder.png" class="img-circle" alt="{{ $username }}">
          	</span>
-         	<span class="profile-name"  @if( $pageTitle != '' && $social != '') style="padding-top: 3px;" @endif>{{ $realname }} <br>
+         	<span class="profile-name"  @if( $pageTitle != '' && $social != '') style="padding-top: 3px;" @endif>
+           	<span style="float:left;">{{ $realname }}</span> <ins class="profile_verified" style="border-radius: 300px; width: 20px; height: 20px; position: relative; z-index: 20; float:left;margin-left:5px;"></ins><br>
          
          	<span class="profile-category" style="line-height: 1.35em; margin: 0 0 0 0;"> 
          	@if( $pageTitle != "")#{{ $pageTitle }}  @if( $social != "")<br>@endif @endif

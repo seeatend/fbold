@@ -26,7 +26,7 @@
   <div class="container">
     <div class="row">
       <div class="">
-        <h2 style="padding: 30px 0 5px; font-size: 30px; font-family: Helvetica; font-weight: 400;" class="text-center">
+        <h2 style="padding: 30px 0 5px; font-size: 30px; font-weight: 400;" class="text-center">
           Trending Searches
         </h2>
         

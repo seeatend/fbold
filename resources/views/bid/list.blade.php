@@ -53,7 +53,7 @@
   <div id="desktop_topbar" class="container hidden-xs">
     <div class="row">
       <div class="col-md-3 col-sm-5">
-        <h1 class="header1">Social Task</h1>
+        <!-- <h1 class="header1">Social Task</h1> -->
       </div>
       <div class="col-md-2 col-sm-2 col-md-offset-7 col-sm-offset-5">
         <div class="dropdown pull-right">
@@ -110,7 +110,7 @@
                       $display_msg = "";
                       $follow_per_name = '';
                       if ($bid->status == ServiceBid::STATUS_NEW) {
-                        $display_msg = 'You received a social task from ';
+                        $display_msg = 'You received a request from ';
                       }
                       if ($bid->status == ServiceBid::STATUS_DENIED) {
                         $display_msg = "You denied a social task from ";
@@ -132,7 +132,7 @@
                         $bid->service_type == 'follow_back' &&
                         $bid->status == ServiceBid::STATUS_NEW
                       ) {
-                        $display_msg = 'Your received a social task from ';
+                        $display_msg = 'You received a request from ';
                       }
 
                       if ($bid->status == ServiceBid::STATUS_COMPLETED) {
@@ -679,19 +679,7 @@
           </div>
           <div class="row">
             <div class="col-md-12 text-center earnings_desc">
-              Received Payments
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <span class="header1 earnings_money">${{ $aggregatedBids['accepted_bids'] }}</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center earnings_desc">
-              Accepted Bids
+              Requests received
             </div>
           </div>
         </div>
@@ -703,7 +691,19 @@
           </div>
           <div class="row">
             <div class="col-md-12 text-center earnings_desc">
-              Sent Bids
+              Requests sent
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <span class="header1 earnings_money">${{ $aggregatedBids['accepted_bids'] }}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center earnings_desc">
+              Requests accepted
             </div>
           </div>
         </div>
