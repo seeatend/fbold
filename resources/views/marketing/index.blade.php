@@ -258,8 +258,8 @@ has been sent directly to the person.</p>
         <div class="subcategories-scroller-slider owl-carousel clearfix">
             <div class="col-xs-12 item">
                 <a href="/sort/category/video" class="img">
-                    <!--                            <img src="images/sub-1.jpg" alt="">-->
-                    <div class="text">
+                    <!-- <img src="images/music video.jpg" alt=""> -->
+                    <div class="text" style="background-image: url('images/music-video.jpg'); background-size:auto 100%; background-position:center">
                         <h3>Music video</h3>
                     </div>
                 </a>
@@ -267,7 +267,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a  href="/sort/category/fashion" class="img">
                     <!--                            <img src="images/sub-2.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/clothingline.jpg'); background-size:100% auto; background-position:center">
                         <h3>Clothing line</h3>
                     </div>
                 </a>
@@ -275,7 +275,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/profile" class="img">
                     <!--                            <img src="images/sub-3.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/profile1.jpg'); background-size:auto 100%; background-position:center">
                         <h3>Profile</h3>
                     </div>
                 </a>
@@ -283,7 +283,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/health" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/health_beauty.jpg'); background-size:100% auto; background-position:center">
                         <h3>Health/Beauty Product</h3>
                     </div>
                 </a>
@@ -291,7 +291,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/app" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/app.jpg'); background-size:100% auto; background-position:center">
                         <h3>App</h3>
                     </div>
                 </a>
@@ -299,7 +299,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/store" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/store.jpg'); background-size:auto 100%; background-position:center">
                         <h3>Store</h3>
                     </div>
                 </a>
@@ -307,7 +307,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/website" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/website.jpg'); background-size:auto 100%; background-position:center">
                         <h3>Website</h3>
                     </div>
                 </a>
@@ -315,7 +315,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/restaurant" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/restaurant.jpg'); background-size:auto 100%; background-position:center">
                         <h3>Restaurant</h3>
                     </div>
                 </a>
@@ -323,7 +323,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/event" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/event.jpg'); background-size:auto 100%; background-position:center">
                         <h3>Event</h3>
                     </div>
                 </a>
@@ -331,7 +331,7 @@ has been sent directly to the person.</p>
             <div class="col-xs-12 item">
                 <a href="/sort/category/book" class="img">
                     <!--                            <img src="images/desktop_subcategory_logo.jpg" alt="">-->
-                    <div class="text">
+                    <div class="text" style="background-image: url('images/book.jpg'); background-size:auto 100%; background-position:center">
                         <h3>Book</h3>
                     </div>
                 </a>

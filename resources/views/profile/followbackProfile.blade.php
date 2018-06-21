@@ -266,7 +266,7 @@
                   		]
                 		   ); ?>
                   		<ins class="social-icon fa fa-twitter @if($userSocial->twitter != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->twitter }}" autocomplete="off" value="{{ $userSocial->twitter }}" name="twitter" placeholder="twitter">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->twitter }}" autocomplete="off" value="{{ $userSocial->twitter }}" name="twitter" placeholder="Twitter">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-floppy-o"></ins> --></a><?php echo Form::close(); ?>
                   	</div>
@@ -278,7 +278,7 @@
                   		]
                 		   ); ?>
                   		<ins class="social-icon fa fa-facebook @if($userSocial->facebook != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->facebook }}" autocomplete="off" value="{{ $userSocial->facebook }}" name="facebook" placeholder="facebook">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->facebook }}" autocomplete="off" value="{{ $userSocial->facebook }}" name="facebook" placeholder="Facebook">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-save"></ins> --></a>
                   		<?php echo Form::close(); ?>
@@ -293,7 +293,7 @@
                   		]
                 		   ); ?>
                   		<ins class="social-icon fa fa-instagram @if($userSocial->instagram != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->instagram }}" autocomplete="off" value="{{ $userSocial->instagram }}" name="instagram" placeholder="instagram">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->instagram }}" autocomplete="off" value="{{ $userSocial->instagram }}" name="instagram" placeholder="Instagram">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-save"></ins> --></a>
                   		<?php echo Form::close(); ?>
@@ -306,7 +306,7 @@
                   		]
                 		   ); ?>
                   		<ins class="social-icon fa fa-linkedin @if($userSocial->linkedin != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->linkedin }}" autocomplete="off" value="{{ $userSocial->linkedin }}" name="linkedin" placeholder="linkedin url">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->linkedin }}" autocomplete="off" value="{{ $userSocial->linkedin }}" name="linkedin" placeholder="Linkedin">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-save"></ins> --></a>
                   		<?php echo Form::close(); ?>
@@ -321,7 +321,7 @@
                   		]
                 		   ); ?>
                   		<ins class="social-icon fa fa-soundcloud @if($userSocial->soundcloud != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->soundcloud }}" autocomplete="off" value="{{ $userSocial->soundcloud }}" name="soundcloud" placeholder="soundcloud">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->soundcloud }}" autocomplete="off" value="{{ $userSocial->soundcloud }}" name="soundcloud" placeholder="Soundcloud">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-save"></ins> --></a>
                   		<?php echo Form::close(); ?>
@@ -334,7 +334,7 @@
                   		]
                 		   ); ?>                  	
                   		<ins class="social-icon fa fa-youtube @if($userSocial->youtube != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->youtube }}" autocomplete="off" value="{{ $userSocial->youtube }}" name="youtube" placeholder="youtube">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->youtube }}" autocomplete="off" value="{{ $userSocial->youtube }}" name="youtube" placeholder="Youtube">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-save"></ins> --></a>
                   		<?php echo Form::close(); ?>
@@ -349,7 +349,7 @@
                   		]
                 		   ); ?>                   	
                   		<ins class="social-icon fa fa-google-plus @if($userSocial->googleplus != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->googleplus }}" autocomplete="off" value="{{ $userSocial->googleplus }}" name="googleplus" placeholder="google+ url">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->googleplus }}" autocomplete="off" value="{{ $userSocial->googleplus }}" name="googleplus" placeholder="Google + Url">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-save"></ins> --></a>
                   		<?php echo Form::close(); ?>
@@ -362,7 +362,7 @@
                   		]
                 		   ); ?>  
                   		<ins class="social-icon fa fa-link @if($userSocial->web != '') active @endif"></ins>
-                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->web }}" autocomplete="off" value="{{ $userSocial->web }}" name="web" placeholder="website url">
+                  		<input type="text" data-gate="verify" data-id="{{\Sentry::getUser()->id}}" data-value="{{ $userSocial->web }}" autocomplete="off" value="{{ $userSocial->web }}" name="web" placeholder="Website Url">
                   		<div class="social-confirm"><span>Save? <a href="#" class="social-yes">Yes</a> | <a href="#" class="social-cancel">Cancel</a></span></div>
                   		<div class="checker"></div><a href="#" class="social-save"><!-- <ins class="fa fa-save"></ins> --></a>
                   		<?php echo Form::close(); ?>
